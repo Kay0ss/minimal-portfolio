@@ -1,0 +1,65 @@
+Body {
+    background-color: rgb(246, 242, 242);
+}
+
+.masonry {
+    display: -webkit-box; /* Not needed if autoprefixing */
+    display: -ms-flexbox; /* Not needed if autoprefixing */
+    display: grid;
+    margin: 0 auto;
+    max-width: 1200px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 280px 280px 280px 280px;
+    grid-gap: 1rem;
+  }
+
+  .my-masonry-grid_column {
+    padding-left: 30px; /* gutter size */
+    background-clip: padding-box;
+  }
+
+  .masonry .box {
+      box-shadow: transparent 0 0 0 2px inset;
+      overflow: hidden;
+      border-radius: 32px;
+      user-select: none;
+      will-change: transform;
+  }
+
+  .masonry .box-h {
+      grid-column: span 2;
+      background-color: white;
+  }
+  
+  /* Style your items */
+  /* .my-masonry-grid_column > div { 
+    background: white;
+  } */
+
+
+
+
+
+@media screen and (min-width: 480px) {
+    .box-sq {
+      background-color: yellow;
+    }
+  }
+
+@media screen and (min-width: 768px) {
+    .box-sq {
+      background-color: green;
+    }
+  }
+
+@media screen and (min-width: 1024px) {
+    .box-sq {
+      background-color: blue;
+    }
+  }
+
+@media screen and (min-width: 1200px) {
+    .box-sq {
+      background-color: purple;
+    }
+  }
