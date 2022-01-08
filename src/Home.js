@@ -1,47 +1,35 @@
-import React from "react";
-import "./home.css";
-import Nav from "./nav";
-import Masonry from "react-masonry-css";
+import * as React from 'react';
+import Masonry from 'react-masonry-component';
 
-function Home() {
-  return (
-    <>
-    <Nav />
-    <Masonry
-      breakpointCols={4}
-      className="masonry"
-      columnClassName="my-masonry-grid_column"
-    >
-      <div className="box about"></div>
-      <div className="box box-sq"></div>
-      <div className="box box-v"></div>
-      <div className="box box-sq"></div>
-      <div className="box box-sq"></div>
-      <div className="box box-h"></div>
-      <div className="box box-h"></div>
-      <div className="box box-h"></div>
-      <div className="box box-h"></div>
-      {/* array of JSX items */}
-    </Masonry>
-    </>
+const masonryOptions = {
+    transitionDuration: 0
+};
 
-    // <>
-    //   <div>
-    //     <Nav />
-    //   </div>
-    //   <div className="box-container">
-    //     <div className="box about"></div>
-    //     <div className="box box-sq"></div>
-    //     <div className="box box-v"></div>
-    //     <div className="box box-sq"></div>
-    //     <div className="box box-sq"></div>
-    //     <div className="box box-h"></div>
-    //     <div className="box box-h"></div>
-    //     <div className="box box-h"></div>
-    //     <div className="box box-h"></div>
-    //   </div>
-    // </>
-  );
+const imagesLoadedOptions = { background: '.my-bg-image-el' }
+
+class Home extends React.Component {
+    render() {
+        const childElements = this.props.elements.map(function(element){
+           return (
+                <li className="image-element-class">
+                    <img src={element.src} />
+                </li>
+            );
+        });
+    
+        return (
+            <Masonry
+                className={'my-gallery-class'} // default ''
+                elementType={'ul'} // default 'div'
+                options={masonryOptions} // default {}
+                disableImagesLoaded={false} // default false
+                updateOnEachImageLoad={false} // default false and works only if disableImagesLoaded is false
+                imagesLoadedOptions={imagesLoadedOptions} // default {}
+            >
+                {childElements}
+            </Masonry>
+        );
+    }
 }
 
 export default Home;

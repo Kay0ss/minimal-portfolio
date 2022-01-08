@@ -2,40 +2,29 @@ Body {
     background-color: rgb(246, 242, 242);
 }
 
-.masonry {
-    display: -webkit-box; /* Not needed if autoprefixing */
-    display: -ms-flexbox; /* Not needed if autoprefixing */
-    display: grid;
-    margin: 0 auto;
-    max-width: 1200px;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: 280px 280px 280px 280px;
-    grid-gap: 1rem;
-  }
+.home-box{
+    width: 80%;
+    min-width: 1200px;
+    margin: auto;
+}
 
-  .my-masonry-grid_column {
-    padding-left: 30px; /* gutter size */
-    background-clip: padding-box;
-  }
+.box {
+    border-radius: 32px !important;
+    background-color: white;
+    border: none !important;
+}
 
-  .masonry .box {
-      box-shadow: transparent 0 0 0 2px inset;
-      overflow: hidden;
-      border-radius: 32px;
-      user-select: none;
-      will-change: transform;
-  }
+.tall {
+    height: 576px !important;
+}
 
-  .masonry .box-h {
-      grid-column: span 2;
-      background-color: white;
-  }
-  
-  /* Style your items */
-  /* .my-masonry-grid_column > div { 
-    background: white;
-  } */
+.sq {
+    height: 280px;
+}
 
+.long {
+    width: 576px !important;
+}
 
 
 
