@@ -1,35 +1,36 @@
-import * as React from 'react';
-import Masonry from 'react-masonry-component';
+import * as React from "react";
+import Nav from "./nav.js";
+import "./home.css";
+import GridLayout from "react-grid-layout";
+import Intro from "./Cards/intro";
+import About from "./Cards/about";
+import Map from "./Cards/map";
+import Project1 from "./Cards/project1";
+import DarkMode from "./Cards/darkmode";
+import Linkedin from "./Cards/linkedin.js";
+import Project2 from "./Cards/project2.js";
+import Github from "./Cards/github.js";
+import Project3 from "./Cards/project3.js";
+import Contact from "./Cards/contact.js";
 
-const masonryOptions = {
-    transitionDuration: 0
-};
-
-const imagesLoadedOptions = { background: '.my-bg-image-el' }
-
-class Home extends React.Component {
-    render() {
-        const childElements = this.props.elements.map(function(element){
-           return (
-                <li className="image-element-class">
-                    <img src={element.src} />
-                </li>
-            );
-        });
-    
-        return (
-            <Masonry
-                className={'my-gallery-class'} // default ''
-                elementType={'ul'} // default 'div'
-                options={masonryOptions} // default {}
-                disableImagesLoaded={false} // default false
-                updateOnEachImageLoad={false} // default false and works only if disableImagesLoaded is false
-                imagesLoadedOptions={imagesLoadedOptions} // default {}
-            >
-                {childElements}
-            </Masonry>
-        );
-    }
+function Home() {
+  return (
+    <>
+    <Nav />
+      <div class="wrapper">
+        <Intro />
+        <Map />
+        <Project1 />
+        <DarkMode />
+        <Linkedin />
+        <Project2 />
+        <Github />
+        <About />
+        <Project3 />
+        <Contact />
+      </div>
+    </>
+  );
 }
 
 export default Home;
