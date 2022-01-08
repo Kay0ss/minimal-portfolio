@@ -1,56 +1,73 @@
-import React from "react";
+import React, { useState } from "react";
 import "./cards.css";
 // import noLockdown from "../images/no-lockdown.png";
 // import lockdown from "../images/lockdown.png";
 import ReactDOM from "react-dom";
 
 class Intro extends React.Component {
-    constructor(props) {
-        super(props);
+  constructor(props) {
+    super(props);
 
-        const lockdown = require('../images/lockdown.png');
-        const nolockdown = require('../images/no-lockdown.png');
+    const lockdown = require("../images/lockdown.png");
+    const nolockdown = require("../images/no-lockdown.png");
 
-        this.switchImage = this.switchImage.bind(this);
-        this.state = {
-          currentImage: 0,
-          images: [
-            lockdown, nolockdown
-          ]
-        };
-      }
-      switchImage() {
-        if (this.state.currentImage < this.state.images.length - 1) {
-          this.setState({
-            currentImage: this.state.currentImage + 1
-          });
-        } else {
-          this.setState({
-            currentImage: 0
-          });
-        }
-        return this.currentImage;
-      }
+    this.switchImage = this.switchImage.bind(this);
+    this.state = {
+      currentImage: 0,
+      images: [nolockdown, lockdown],
+    };
+  }
+  switchImage() {
+    const img = document.querySelector("img");
+    var delay = 1000;
+    console.log("it worked");
+    img.classList.add("animate");
+    setTimeout(() => {
+      img.classList.remove("animate");
+    }, 500);
+    if (this.state.currentImage < this.state.images.length - 1) {
+      this.setState({
+        currentImage: this.state.currentImage + 1,
+      });
+    } else {
+      img.classList.add("animate");
+      setTimeout(() => {
+        img.classList.remove("animate");
+      }, 500);
+      this.setState({
+        currentImage: 0,
+      });
+    }
 
-    //   componentDidMount() {
-    //     setInterval(this.switchImage, 1000);
-    //   }
+    return this.currentImage;
+  }
+
+  componentDidMount() {}
 
   render() {
+    //   function ZoomIn() {
+    //     console.log('it worked');
+    //     img.classList.add('fade-in');
+    //   }
     return (
       <div className="box intro">
         <div className="intro-content">
-          <img className="profile-pic" src={this.state.images[this.state.currentImage]} alt="self portrait of me" />
+          <img
+            className="profile-pic"
+            src={this.state.images[this.state.currentImage]}
+            alt="self portrait of me"
+          />
           <p className="intro-text">
             I'm <span className="jack">jack</span>, I'm a full stack web
             developer from Minneapolis. I'm interested in React, Node, and
             Design.
           </p>
-          <button onClick={this.switchImage}>click me</button>
-          <a class="button-toggle"
+          <a
+            class="button-toggle"
             onClick={this.switchImage}
+            // onClick={ZoomIn()}
+            // ---------------------------------------
           >
-              
             <svg
               id="Arrow_Rotate.2"
               data-name="Arrow, Rotate.2"

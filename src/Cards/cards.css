@@ -1,75 +1,94 @@
-@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Orelega+One&display=swap");
 
 .box {
-    /* border-radius: 32px;
+  /* border-radius: 32px;
     background-color: white;
     border: none;
     text-align: center; */
-    box-shadow: transparent 0 0 0 2px inset;
-    overflow: hidden;
-    border-radius: 32px;
-    user-select: none;
-    will-change: transform;
+  box-shadow: transparent 0 0 0 2px inset;
+  overflow: hidden;
+  border-radius: 32px;
+  user-select: none;
+  will-change: transform;
 }
 
 .intro {
-    
 }
 
 .intro .button-toggle {
-    box-shadow: #f0f2f8 0 0 0 2px;
-    position: absolute;
-    height: 36px;
-    padding: 0 12px;
-    top: 20px;
-    right: 20px;
-    border: none;
-    border-radius: 18px;
-    background: 0 0;
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    transition: all .2s ease-out 0s;
-    will-change: box-shadow,transform;
+  box-shadow: #f0f2f8 0 0 0 2px;
+  position: absolute;
+  height: 36px;
+  padding: 0 12px;
+  top: 20px;
+  right: 20px;
+  border: none;
+  border-radius: 18px;
+  background: 0 0;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  transition: all 0.2s ease-out 0s;
+  will-change: box-shadow, transform;
 }
 
 .intro .button-toggle p {
-    font-size: 14px;
-    margin: 0;
-    font-family: 'Verdana';
-    line-height: 24px;
-    letter-spacing: .25px;
-    font-weight: 500;
-    color: #0d1117;
-    margin-left: 6px;
+  font-size: 14px;
+  margin: 0;
+  font-family: "Verdana";
+  line-height: 24px;
+  letter-spacing: 0.25px;
+  font-weight: 500;
+  color: #0d1117;
+  margin-left: 6px;
 }
 
 .intro-content {
-    position: relative;
-    align-items: flex-start;
-    padding: 36px 42px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: white;
+  position: relative;
+  align-items: flex-start;
+  padding: 36px 42px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
 }
 
-.profile-pic {
-    width: 19%;
-    height: auto;
-    animation: zoom-in-zoom-out 1s ease-out;
+.intro-content img {
+  width: 19%;
+  height: auto;
+  /* transition: transform 0.5s ease; */
 }
+
+/* .intro-content img[wobble='1'] {
+    animation: wobble 1s 1;
+} */
+
+@keyframes fade-in {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes zoom {
+    from {
+      transform: scale(0, 0);
+    }
+    to {
+      transform: scale(1, 1);
+    }
+  }
+
+  .animate {
+    animation: fade-in 0.5s, zoom 0.5s;
+  }
 
 .intro-text {
-    text-align: left;
-    font-size: 15px;
-    margin-top: 29px;
+  text-align: left;
+  font-size: 15px;
+  margin-top: 29px;
 }
 
 .jack {
-    font-size: 40px;
-    font-weight: 400;
-    font-family: 'Orelega One', cursive;
- 
+  font-size: 40px;
+  font-weight: 400;
+  font-family: "Orelega One", cursive;
 }
