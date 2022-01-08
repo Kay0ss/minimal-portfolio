@@ -1,7 +1,6 @@
 import * as React from "react";
 import Nav from "./nav.js";
 import "./home.css";
-import GridLayout from "react-grid-layout";
 import Intro from "./Cards/intro";
 import About from "./Cards/about";
 import Map from "./Cards/map";
