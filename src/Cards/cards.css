@@ -12,9 +12,6 @@
   will-change: transform;
 }
 
-.box.dark-mode {
-    background-color: tomato;
-}
 
 
 /* ---------------------------------------------------------------------------------------------------------------------------------- */
@@ -107,13 +104,30 @@
 
 /* ---------------------------------------------------------------------------------------------------------------------------------- */
 
-.proj1-bg {
+.proj-bg-tall {
     width: 288px;
     height: 576px;
 }
 
-.proj3-bg {
-  width: 140%;
+.skills-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: absolute;
+  top: 5%;
+  gap: 1rem;
+  background-color: rgba(105, 133, 197, 0) !important;
+  width: 288px;
+  height: 90%;
+}
+.skills-box svg {
+  color: rgb(43, 54, 74);
+}
+
+.proj-bg-long {
+  width: 592px;
+  height: 288px;
 }
 
 .darkmode {
@@ -125,13 +139,13 @@
 .linkedin {
   display: flex;
   align-items: center;
-  background-color: rgb(105, 132, 197) !important;
+  background-color: rgb(105, 132, 197);
   color: #f0f2f8;
 }
 
 .box-linkedin {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: flex;
   justify-content: center;
   background-color: rgb(105, 132, 197) !important; 
@@ -152,12 +166,46 @@
 }
 .arrow-btn:hover {
   box-shadow: #e1e1e1bb 0 0 0 5px;
-
 }
 .arrow-btn svg {
-  width: 20px !important;
+  width: 12px !important;
   color: #0d1117;
   stroke-width: 1px;
+}
+
+.arrow-btn-long {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  color: black;
+  width: 30%;
+  padding: 5px;
+  height: auto;
+  text-decoration: none;
+  position: absolute;
+  height: 36px;
+  padding: 0 12px;
+  bottom: 20px;
+  left: 20px;
+  border-radius: 100px;
+  transition: all 0.2s ease-out 0s;
+}
+.arrow-btn-long:hover {
+  box-shadow: #e1e1e1bb 0 0 0 5px;
+}
+.arrow-btn-long svg {
+  width: 12px !important;
+  color: #0d1117;
+  stroke-width: 1px;
+}
+
+.btn-text:link, .btn-text:active, .btn-text:visited {
+  color: black;
+  background-color: transparent;
+}
+.btn-text:hover {
+  color: black;
 }
 
 #Arrow_Rotate {
@@ -177,4 +225,28 @@ div .github {
   background-color: rgb(114, 212, 181) !important;
   color: #f0f2f8;
   
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.about-content {
+  text-align: center;
+  margin: auto;
+  align-items: center;
+  width: 90%;
+  height: min-content;
+  font-size: 23px;  
+}
+
+
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
 }

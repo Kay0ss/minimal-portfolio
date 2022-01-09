@@ -6,7 +6,7 @@ function Project3() {
   return (
     <div className="box">
       <div>
-        <img className="proj3-bg" src={proj3} alt="..." />
+        <img className="proj-bg-long" src={proj3} alt="..." />
       </div>
     </div>
   );
