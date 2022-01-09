@@ -16,7 +16,13 @@
     background-color: tomato;
 }
 
+
+/* ---------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
 .intro .button-toggle {
+  background-color: rgb(255, 255, 255) !important;
   box-shadow: #f0f2f8 0 0 0 2px;
   position: absolute;
   height: 36px;
@@ -34,7 +40,7 @@
 }
 
 .intro .button-toggle:hover {
-  box-shadow: #f0f2f8 0 0 0 5px;
+  box-shadow: #e1e1e1bb 0 0 0 5px;
 }
 
 .intro .button-toggle p {
@@ -99,11 +105,15 @@
 }
 
 
-
+/* ---------------------------------------------------------------------------------------------------------------------------------- */
 
 .proj1-bg {
-    width: 115%;
-    height: auto;
+    width: 288px;
+    height: 576px;
+}
+
+.proj3-bg {
+  width: 140%;
 }
 
 .darkmode {
@@ -112,3 +122,59 @@
     justify-content: center;
 }
 
+.linkedin {
+  display: flex;
+  align-items: center;
+  background-color: rgb(105, 132, 197) !important;
+  color: #f0f2f8;
+}
+
+.box-linkedin {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(105, 132, 197) !important; 
+}
+.arrow-btn {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  width: 5%;
+  height: auto;
+  position: absolute;
+  height: 36px;
+  padding: 0 12px;
+  bottom: 20px;
+  left: 20px;
+  border-radius: 100px;
+  transition: all 0.2s ease-out 0s;
+}
+.arrow-btn:hover {
+  box-shadow: #e1e1e1bb 0 0 0 5px;
+
+}
+.arrow-btn svg {
+  width: 20px !important;
+  color: #0d1117;
+  stroke-width: 1px;
+}
+
+#Arrow_Rotate {
+  width: 15px;
+}
+
+.box svg {
+  width: 100px;
+  height: auto;
+}
+
+div .github {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(114, 212, 181) !important;
+  color: #f0f2f8;
+  
+}
