@@ -1,17 +1,19 @@
 {
   "files": {
-    "main.css": "/minimal-portfolio/static/css/main.ee614f43.css",
-    "main.js": "/minimal-portfolio/static/js/main.195c9238.js",
+    "main.css": "/minimal-portfolio/static/css/main.f383f3ae.css",
+    "main.js": "/minimal-portfolio/static/js/main.501f9325.js",
     "static/js/787.b58214ae.chunk.js": "/minimal-portfolio/static/js/787.b58214ae.chunk.js",
+    "static/media/lockdown.png": "/minimal-portfolio/static/media/lockdown.edffab5a9c4cb2f7fa2f.png",
     "static/media/no-lockdown.png": "/minimal-portfolio/static/media/no-lockdown.69dd607bb49f7b340d85.png",
-    "static/media/lockdown.png": "/minimal-portfolio/static/media/lockdown.a3e9d4d0ac63c096a55d.png",
+    "static/media/project1-bg.png": "/minimal-portfolio/static/media/project1-bg.ce7086a775b764135ddd.png",
+    "static/media/project3-bg.png": "/minimal-portfolio/static/media/project3-bg.831eb623a9ea2c1dc08b.png",
     "index.html": "/minimal-portfolio/index.html",
-    "main.ee614f43.css.map": "/minimal-portfolio/static/css/main.ee614f43.css.map",
-    "main.195c9238.js.map": "/minimal-portfolio/static/js/main.195c9238.js.map",
+    "main.f383f3ae.css.map": "/minimal-portfolio/static/css/main.f383f3ae.css.map",
+    "main.501f9325.js.map": "/minimal-portfolio/static/js/main.501f9325.js.map",
     "787.b58214ae.chunk.js.map": "/minimal-portfolio/static/js/787.b58214ae.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ee614f43.css",
-    "static/js/main.195c9238.js"
+    "static/css/main.f383f3ae.css",
+    "static/js/main.501f9325.js"
   ]
 }
