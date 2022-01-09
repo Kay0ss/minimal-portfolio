@@ -12,7 +12,8 @@
   will-change: transform;
 }
 
-.intro {
+.box.dark-mode {
+    background-color: tomato;
 }
 
 .intro .button-toggle {
@@ -30,6 +31,10 @@
   align-items: center;
   transition: all 0.2s ease-out 0s;
   will-change: box-shadow, transform;
+}
+
+.intro .button-toggle:hover {
+  box-shadow: #f0f2f8 0 0 0 5px;
 }
 
 .intro .button-toggle p {
@@ -92,3 +97,18 @@
   font-weight: 400;
   font-family: "Orelega One", cursive;
 }
+
+
+
+
+.proj1-bg {
+    width: 115%;
+    height: auto;
+}
+
+.darkmode {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
