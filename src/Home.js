@@ -1,9 +1,10 @@
 import * as React from "react";
 import Nav from "./nav.js";
 import "./home.css";
+// import 'mapbox-gl/dist/mapbox-gl.css';
 import Intro from "./Cards/intro";
 import About from "./Cards/about";
-import Map from "./Cards/map";
+import Mapbox from "./Cards/map.js";
 import Project1 from "./Cards/project1";
 import DarkMode from "./Cards/darkmode";
 import Linkedin from "./Cards/linkedin.js";
@@ -18,7 +19,7 @@ function Home() {
     <Nav />
       <div class="wrapper">
         <Intro />
-        <Map />
+        <Mapbox />
         <Project1 />
         <DarkMode />
         <Linkedin />

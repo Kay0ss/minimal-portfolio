@@ -1,22 +1,37 @@
-import React from "react";
+import react from "react";
 import "./cards.css";
-import mapboxgl from 'mapbox-gl';
+import ReactMapboxGl, { Layer, Feature } from "mapbox-gl";
+import "mapbox-gl/dist/mapbox-gl.css";
+// import map from "./map.html";
 
-mapboxgl.accessToken = 'pk.eyJ1IjoiamFja3QxMjMiLCJhIjoiY2t5N3J3ZmpzMHJ0eDMxcW1veXIyOGphOSJ9.sC3ZTl21XLZbKPlvBPulJg';
-const map = new mapboxgl.Map({
-container: 'map', // container ID
-style: 'mapbox://styles/jackt123/cky7rzzh22c5515o1efhgnt85', // style URL
-center: [-74.5, 40], // starting position [lng, lat]
-zoom: 9 // starting zoom
+const Map = ReactMapboxGl({
+  accessToken:
+    "pk.eyJ1IjoiZmFicmljOCIsImEiOiJjaWc5aTV1ZzUwMDJwdzJrb2w0dXRmc2d0In0.p6GGlfyV-WksaDV_KdN27A",
 });
 
-function Map() {
-    return(
-        <div className="box">
-            <div className="map-contents" id="map">
-            </div>
-        </div>
-    )
+function Mapbox() {
+  return (
+    <div className="box">
+      <div>
+        <Map
+          style="mapbox://styles/mapbox/streets-v9"
+          containerStyle={{
+            height: "100vh",
+            width: "100vw",
+          }}
+        >
+          <Layer
+            type="symbol"
+            id="marker"
+            layout={{ "icon-image": "marker-15" }}
+          >
+            <Feature coordinates={[-0.481747846041145, 51.3233379650232]} />
+          </Layer>
+        </Map>
+        ;
+      </div>
+    </div>
+  );
 }
 
-export default Map;
+export default Mapbox;
