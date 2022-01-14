@@ -4,7 +4,7 @@ import "./home.css";
 // import 'mapbox-gl/dist/mapbox-gl.css';
 import Intro from "./Cards/intro";
 import About from "./Cards/about";
-import Mapbox from "./Cards/map.js";
+import Map from "./Cards/map.js";
 import Project1 from "./Cards/project1";
 import DarkMode from "./Cards/darkmode";
 import Linkedin from "./Cards/linkedin.js";
@@ -19,7 +19,7 @@ function Home() {
     <Nav />
       <div class="wrapper">
         <Intro />
-        <Mapbox />
+        <Map />
         <Project1 />
         <DarkMode />
         <Linkedin />

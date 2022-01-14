@@ -248,4 +248,40 @@ div .github {
   font-size: 23px;  
 }
 
+/* MAP STYLES */
 
+.mapbox {
+  display: relative;
+}
+
+.map-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.mapboxgl-ctrl-top-left, .mapboxgl-ctrl-compass, .mapboxgl-ctrl-bottom-left, .mapboxgl-ctrl-bottom-right, .mapboxgl-ctrl-zoom-out, .mapboxgl-ctrl-zoom-in{
+  display: none !important;
+}
+ {
+  display: none !important;
+}
+
+.eTWOUV { 
+background: rgb(255, 255, 255);
+width: 36px;
+height: 36px;
+border-radius: 18px;
+position: absolute;
+bottom: 14px;
+display: flex;
+-webkit-box-align: center;
+align-items: center;
+-webkit-box-pack: center;
+justify-content: center;
+transition: box-shadow 0.2s ease 0s;
+will-change: transform;
+z-index: 1;
+}
