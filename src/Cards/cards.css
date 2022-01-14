@@ -265,15 +265,12 @@ div .github {
 .mapboxgl-ctrl-top-left, .mapboxgl-ctrl-compass, .mapboxgl-ctrl-bottom-left, .mapboxgl-ctrl-bottom-right, .mapboxgl-ctrl-zoom-out, .mapboxgl-ctrl-zoom-in{
   display: none !important;
 }
- {
-  display: none !important;
-}
 
 .eTWOUV { 
 background: rgb(255, 255, 255);
-width: 36px;
-height: 36px;
-border-radius: 18px;
+width: 40px;
+height: 40px;
+border-radius: 50px;
 position: absolute;
 bottom: 14px;
 display: flex;

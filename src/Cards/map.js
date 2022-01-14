@@ -23,43 +23,107 @@ const Map = () => {
       zoom: 11.9,
       maxZoom: 15.9,
       minZoom: 7,
-      interactive: false
+      interactive: false,
     });
 
     map.scrollZoom.disable();
-    
+
     const zoomLevel = [11, 10, 9, 8, 7];
 
-      var index = 0;
-    
-    document.getElementById('fly').addEventListener('click', () => {
-        index = (index + 1) % zoomLevel.length;
-        map.flyTo({ zoom: zoomLevel[index] });
-        });
+    var i = 0;
 
+    function zoomOut() {
+      i = (i + 1) % zoomLevel.length;
 
-    map.addControl(new mapboxgl.NavigationControl(), "top-right");
+      map.flyTo({ zoom: zoomLevel[i] });
 
-    // map.on("move", () => {
-    //   setLng(map.getCenter().lng.toFixed(4));
-    //   setLat(map.getCenter().lat.toFixed(4));
-    //   setZoom(map.getZoom().toFixed(4));
-    // });
+      if (zoomLevel[i] === 7) {
+        document.getElementById("out").disabled = true;
+      }
+    }
 
-    
+    document.getElementById("out").addEventListener("click", () => {
+      zoomOut();
+    });
+
     // Clean up on unmount
     return () => map.remove();
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
-
   return (
     <div className="box mapbox">
       {/* <div className="sidebarStyle"> */}
-        <div></div>
+      <div></div>
       {/* </div> */}
       <div className="map-container" ref={mapContainerRef} />
-      <button id="fly" className="Map__ZoomButton-sc-12s41qg-4 eTWOUV"style={{left: '14px', opacity: '1', transform: 'none'}}>
-      <svg id="plus-add.3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path id="Path_13" data-name="Path 13" d="M0,0H24V24H0Z" fill="none"></path><path id="Path_15" data-name="Path 15" d="M16,12H8" fill="none" stroke="#0D1117" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg>
+      <button
+        id="out"
+        className="Map__ZoomButton-sc-12s41qg-4 eTWOUV"
+        style={{ left: "20px", opacity: "1", transform: "none" }}
+      >
+        <svg
+          id="plus-add.3"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+        >
+          <path
+            id="Path_13"
+            data-name="Path 13"
+            d="M0,0H24V24H0Z"
+            fill="none"
+          ></path>
+          <path
+            id="Path_15"
+            data-name="Path 15"
+            d="M16,12H8"
+            fill="none"
+            stroke="#0D1117"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="1.5"
+          ></path>
+        </svg>
+      </button>
+      <button
+        class="Map__ZoomButton-sc-12s41qg-4 eTWOUV"
+        style={{right: '20px', opacity: '1', transform: 'none'}}
+      >
+        <svg
+          id="plus-add.3"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+        >
+          <path
+            id="Path_13"
+            data-name="Path 13"
+            d="M0,0H24V24H0Z"
+            fill="none"
+          ></path>
+          <path
+            id="Path_14"
+            data-name="Path 14"
+            d="M12,8v8"
+            fill="none"
+            stroke="#0D1117"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="1.5"
+          ></path>
+          <path
+            id="Path_15"
+            data-name="Path 15"
+            d="M16,12H8"
+            fill="none"
+            stroke="#0D1117"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="1.5"
+          ></path>
+        </svg>
       </button>
     </div>
   );
