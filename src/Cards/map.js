@@ -3,6 +3,7 @@ import mapboxgl from "mapbox-gl";
 import "./cards.css";
 import { FaDailymotion } from "react-icons/fa";
 import { BsQuestionSquare } from "react-icons/bs";
+import avatar from "../images/no-lockdown.png";
 
 mapboxgl.accessToken =
   "pk.eyJ1IjoiamFja3QxMjMiLCJhIjoiY2t5N3J3ZmpzMHJ0eDMxcW1veXIyOGphOSJ9.sC3ZTl21XLZbKPlvBPulJg";
@@ -34,9 +35,9 @@ const Map = () => {
     function zoomOut() {
       i = (i + 1) % zoomLevel.length;
       map.flyTo({ zoom: zoomLevel[i] });
-      
+
       if (zoomLevel[i] >= 6) {
-        return zoomOut
+        return zoomOut;
       } else {
         document.getElementById("out").disabled = true;
       }
@@ -45,19 +46,19 @@ const Map = () => {
     function zoomIn() {
       i = (i - 1) % zoomLevel.length;
       map.flyTo({ zoom: zoomLevel[i] });
-      
+
       if (zoomLevel[i] <= 14) {
-        return zoomIn
+        return zoomIn;
       } else {
         document.getElementById("in").disabled = true;
       }
     }
-    
+
     document.getElementById("out").addEventListener("click", () => {
       document.getElementById("in").disabled = false;
       zoomOut();
     });
-    
+
     document.getElementById("in").addEventListener("click", () => {
       document.getElementById("out").disabled = false;
 
@@ -70,9 +71,6 @@ const Map = () => {
 
   return (
     <div className="box mapbox">
-      {/* <div className="sidebarStyle"> */}
-      <div></div>
-      {/* </div> */}
       <div className="map-container" ref={mapContainerRef} />
       <button
         id="out"
@@ -144,6 +142,9 @@ const Map = () => {
           ></path>
         </svg>
       </button>
+      <div style={{ transform: "none" }} className="map-avatar">
+        <div className="avatar"><img src={avatar} alt="map avatar" /></div>
+      </div>
     </div>
   );
 };
