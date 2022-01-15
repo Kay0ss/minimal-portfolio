@@ -20,45 +20,46 @@ const Map = () => {
       container: mapContainerRef.current,
       style: "mapbox://styles/jackt123/cky7rzzh22c5515o1efhgnt85",
       center: [-93.264, 44.981],
-      zoom: 11.9,
-      maxZoom: 15.9,
-      minZoom: 7,
+      zoom: "10",
+      maxZoom: 16,
+      minZoom: 1,
       interactive: false,
     });
 
     map.scrollZoom.disable();
 
-    const zoomLevel = [11, 10, 9, 8, 7];
-    var i = 0;
+    const zoomLevel = [16, 14, 12, 10, 8, 6, 4];
+    var i = 3;
 
     function zoomOut() {
       i = (i + 1) % zoomLevel.length;
       map.flyTo({ zoom: zoomLevel[i] });
-      // document.getElementById("in").disabled = false;
-
-      if (zoomLevel[i] === 7) {
+      
+      if (zoomLevel[i] >= 6) {
+        return zoomOut
+      } else {
         document.getElementById("out").disabled = true;
       }
     }
 
     function zoomIn() {
       i = (i - 1) % zoomLevel.length;
-
       map.flyTo({ zoom: zoomLevel[i] });
-      // document.getElementById("in").disabled = false
-
-      if (i >= 1) {
-        document.getElementById("in").disabled = true;
+      
+      if (zoomLevel[i] <= 14) {
+        return zoomIn
       } else {
-        document.getElementById("in").className = "eTWOUV";
+        document.getElementById("in").disabled = true;
       }
     }
 
     document.getElementById("out").addEventListener("click", () => {
+      document.getElementById("in").disabled = false;
       zoomOut();
     });
 
     document.getElementById("in").addEventListener("click", () => {
+      document.getElementById("out").disabled = false;
       zoomIn();
     });
 
