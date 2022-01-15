@@ -29,21 +29,37 @@ const Map = () => {
     map.scrollZoom.disable();
 
     const zoomLevel = [11, 10, 9, 8, 7];
-
     var i = 0;
 
     function zoomOut() {
       i = (i + 1) % zoomLevel.length;
-
       map.flyTo({ zoom: zoomLevel[i] });
+      // document.getElementById("in").disabled = false;
 
       if (zoomLevel[i] === 7) {
         document.getElementById("out").disabled = true;
       }
     }
 
+    function zoomIn() {
+      i = (i - 1) % zoomLevel.length;
+
+      map.flyTo({ zoom: zoomLevel[i] });
+      // document.getElementById("in").disabled = false
+
+      if (i >= 1) {
+        document.getElementById("in").disabled = true;
+      } else {
+        document.getElementById("in").className = "eTWOUV";
+      }
+    }
+
     document.getElementById("out").addEventListener("click", () => {
       zoomOut();
+    });
+
+    document.getElementById("in").addEventListener("click", () => {
+      zoomIn();
     });
 
     // Clean up on unmount
@@ -87,8 +103,9 @@ const Map = () => {
         </svg>
       </button>
       <button
+        id="in"
         class="Map__ZoomButton-sc-12s41qg-4 eTWOUV"
-        style={{right: '20px', opacity: '1', transform: 'none'}}
+        style={{ right: "20px", opacity: "1", transform: "none" }}
       >
         <svg
           id="plus-add.3"

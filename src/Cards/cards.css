@@ -282,3 +282,7 @@ transition: box-shadow 0.2s ease 0s;
 will-change: transform;
 z-index: 1;
 }
+
+.disabled {
+  opacity: 0.5;
+}
