@@ -12,11 +12,7 @@
   will-change: transform;
 }
 
-
-
 /* ---------------------------------------------------------------------------------------------------------------------------------- */
-
-
 
 .intro .button-toggle {
   background-color: rgb(255, 255, 255) !important;
@@ -77,22 +73,26 @@
 } */
 
 @keyframes fade-in {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes zoom {
-    from {
-      transform: scale(0, 0);
-    }
-    to {
-      transform: scale(1, 1);
-    }
+  from {
+    transform: scale(0, 0);
   }
+  to {
+    transform: scale(1, 1);
+  }
+}
 
-  .animate {
-    animation: fade-in 0.5s, zoom 0.5s;
-  }
+.animate {
+  animation: fade-in 0.5s, zoom 0.5s;
+}
 
 .intro-text {
   text-align: left;
@@ -106,12 +106,11 @@
   font-family: "Orelega One", cursive;
 }
 
-
 /* ---------------------------------------------------------------------------------------------------------------------------------- */
 
 .proj-bg-tall {
-    width: 288px;
-    height: 576px;
+  width: 288px;
+  height: 576px;
 }
 
 .skills-box {
@@ -136,9 +135,9 @@
 }
 
 .darkmode {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .linkedin {
@@ -153,7 +152,7 @@
   height: 100%;
   display: flex;
   justify-content: center;
-  background-color: rgb(105, 132, 197) !important; 
+  background-color: rgb(105, 132, 197) !important;
 }
 .arrow-btn {
   display: flex;
@@ -205,7 +204,9 @@
   stroke-width: 1px;
 }
 
-.btn-text:link, .btn-text:active, .btn-text:visited {
+.btn-text:link,
+.btn-text:active,
+.btn-text:visited {
   color: black;
   background-color: transparent;
 }
@@ -229,7 +230,6 @@ div .github {
   align-items: center;
   background-color: rgb(114, 212, 181) !important;
   color: #f0f2f8;
-  
 }
 
 .about-container {
@@ -245,7 +245,7 @@ div .github {
   align-items: center;
   width: 90%;
   height: min-content;
-  font-size: 23px;  
+  font-size: 23px;
 }
 
 /* MAP STYLES */
@@ -262,27 +262,56 @@ div .github {
   right: 0;
 }
 
-.mapboxgl-ctrl-top-left, .mapboxgl-ctrl-compass, .mapboxgl-ctrl-bottom-left, .mapboxgl-ctrl-bottom-right, .mapboxgl-ctrl-zoom-out, .mapboxgl-ctrl-zoom-in{
+.mapboxgl-ctrl-top-left,
+.mapboxgl-ctrl-compass,
+.mapboxgl-ctrl-bottom-left,
+.mapboxgl-ctrl-bottom-right,
+.mapboxgl-ctrl-zoom-out,
+.mapboxgl-ctrl-zoom-in {
   display: none !important;
 }
 
-.eTWOUV { 
-background: rgb(255, 255, 255);
-width: 40px;
-height: 40px;
-border-radius: 50px;
-position: absolute;
-bottom: 14px;
-display: flex;
--webkit-box-align: center;
-align-items: center;
--webkit-box-pack: center;
-justify-content: center;
-transition: box-shadow 0.2s ease 0s;
-will-change: transform;
-z-index: 1;
+.eTWOUV {
+  background: rgb(255, 255, 255);
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  position: absolute;
+  bottom: 14px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  transition: box-shadow 0.2s ease 0s;
+  will-change: transform;
+  z-index: 1;
 }
 
-.disabled {
-  opacity: 0.5;
+#in, #out {
+  transition: all 0.2s ease-out 0s;
+}
+
+#in:hover, #out:hover {
+  box-shadow: #e1e1e1bb 0 0 0 5px;
+}
+
+button[disabled=disabled] svg, button:disabled svg{
+  opacity: 0.2 !important;
+
+}
+
+.map-avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  border: 4px solid rgb(255, 255, 255);
+  background: rgba(152, 208, 255, 0.5);
+  z-index: 1;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  will-change: transform;
 }

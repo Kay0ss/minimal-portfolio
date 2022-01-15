@@ -52,14 +52,15 @@ const Map = () => {
         document.getElementById("in").disabled = true;
       }
     }
-
+    
     document.getElementById("out").addEventListener("click", () => {
       document.getElementById("in").disabled = false;
       zoomOut();
     });
-
+    
     document.getElementById("in").addEventListener("click", () => {
       document.getElementById("out").disabled = false;
+
       zoomIn();
     });
 
