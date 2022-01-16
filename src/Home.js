@@ -12,11 +12,12 @@ import Project2 from "./Cards/project2.js";
 import Github from "./Cards/github.js";
 import Project3 from "./Cards/project3.js";
 import Contact from "./Cards/contact.js";
+// import Nav from "./test-nav.js";
 
 function Home() {
   return (
     <>
-    <Nav />
+      {/* <Nav /> */}
       <div class="wrapper">
         <Intro />
         <Map />

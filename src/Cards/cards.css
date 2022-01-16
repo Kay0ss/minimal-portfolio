@@ -113,6 +113,14 @@
   height: 110%;
 }
 
+.proj-1 {
+  background-image: url("../images/project1-bg.png");
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+
+
 .skills-box {
   display: flex;
   flex-direction: row;
