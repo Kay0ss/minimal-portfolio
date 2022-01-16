@@ -5,6 +5,9 @@ import { FaDailymotion } from "react-icons/fa";
 import { BsQuestionSquare } from "react-icons/bs";
 import avatar from "../images/no-lockdown.png";
 
+// eslint-disable-next-line import/no-webpack-loader-syntax
+mapboxgl.workerClass = require("worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker").default;
+
 mapboxgl.accessToken =
   "pk.eyJ1IjoiamFja3QxMjMiLCJhIjoiY2t5N3J3ZmpzMHJ0eDMxcW1veXIyOGphOSJ9.sC3ZTl21XLZbKPlvBPulJg";
 
