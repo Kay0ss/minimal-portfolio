@@ -56,7 +56,7 @@
     "gh-pages": "^3.2.3"
   },
 
-  "overrides": {
+  "resolutions": {
     "mini-css-extract-plugin": "2.4.5"
   }
 }
