@@ -1,3 +1,8 @@
+body.dark-mode .navbar {
+    background-color: black !important;
+}
+
+
 .nav-container {
   display: flex;
   justify-content: space-between;
@@ -35,29 +40,74 @@ h1:nth-child(3) {
 }
 
 .navbar {
+  width: 20em;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  justify-content: space-evenly;
+  background-color: #dfdfdf;
+  border-radius: 35px;
+  border: 2px rgb(246, 242, 242) solid;
+  transition: all 1.2s ease;
+  gap: 10px;
+  position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
+  /* display: inline; */
+}
+
+.navbar #nav-btn1,
+#nav-btn2,
+#nav-btn3,
+#nav-btn4 {
+  width: 100%;
+  text-align: center;
+  border-radius: 15px;
+  padding: 3px 10px 3px 10px;
+  font-weight: 400;
+  font-size: 14px;
+  z-index: 1;
+  display: inline;
+}
+
+.active1, .active2, .active3, .active4, .active {
+    color: black;
+}
+
+
+.animation {
+  position: absolute;
+  height: 80%;
+  top: auto;
+  bottom: auto;
+  left: 5px;
+  width: 22%;
+  background-color: #fff;
+  z-index: 0;
+  transition: all 0.5s ease 0s;
+  border-radius: 35px;
+}
+
+.active {
+  transition: all 0.7s ease;
+  /* background-color: #fff; */
+}
+
+#nav-btn1.active ~ .animation {
+  margin-left: 0%;
+}
+
+#nav-btn2.active ~ .animation {
+  margin-left: 23.75%;
+}
+
+#nav-btn3.active ~ .animation {
+    margin-left: 47.5%;
     width: 27%;
-    height: 38px;
-    display: flex;
-    align-items: center;
-    padding: 5px;
-    justify-content: space-evenly;
-    background-color: #dfdfdf;
-    border-radius: 35px;
-    transition: all 1.2s ease;
-    gap: 10px;
+    padding-left: 10px ;
 }
 
-#nav-btn {
-    width: 100%;
-    text-align: center;
-    border-radius: 15px;
-    padding: 3px 10px 3px 10px;
-    font-weight: 400;
-    font-size: 14px;
+#nav-btn4.active ~ .animation {
+    margin-left: 75%;
 }
-
-.navbar #nav-btn:focus, .active {
-    background-color: #fff;
-}
-
-
