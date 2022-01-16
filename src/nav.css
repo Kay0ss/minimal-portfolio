@@ -35,22 +35,29 @@ h1:nth-child(3) {
 }
 
 .navbar {
-    width: 300px;
-    height: 36px;
+    width: 27%;
+    height: 38px;
     display: flex;
     align-items: center;
+    padding: 5px;
     justify-content: space-evenly;
     background-color: #dfdfdf;
     border-radius: 35px;
     transition: all 1.2s ease;
+    gap: 10px;
 }
 
-.navbar #nav-btn:focus {
+#nav-btn {
+    width: 100%;
+    text-align: center;
+    border-radius: 15px;
+    padding: 3px 10px 3px 10px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.navbar #nav-btn:focus, .active {
     background-color: #fff;
-    height: 80%;
-    /* padding: 4px; */
-    /* margin: auto; */
-    border-radius: 20px;
 }
 
 
