@@ -129,9 +129,11 @@
   color: rgb(43, 54, 74);
 }
 
-.proj-bg-long {
-  width: 100%;
-  height: auto;
+.proj-container {
+  width: auto;
+  height: 100%;
+  background-image: url("../images/project3-bg.png");
+  background-size: cover;
 }
 
 .darkmode {
