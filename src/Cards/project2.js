@@ -6,7 +6,7 @@ import { FaHtml5, FaSass, FaBootstrap, FaGit, FaJsSquare, FaReact, FaCss3Alt, Fa
 function Project2() {
   return (
     <div className="box">
-      <div>
+      <div style={{height : '100%'}}>
         <img className="proj-bg-tall" src={proj2} alt="..." />
         <div className="skills-box">
             {/* <FaBootstrap /> */}

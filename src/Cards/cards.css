@@ -52,20 +52,20 @@
   align-items: flex-start;
   padding: 34px 40px;
   display: flex;
+  height: 100%;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   background-color: white;
 }
 
 .intro {
-  height: 280px !important;
+  /* height: 100%; */
   background-color: white;
 }
 
 .intro-content img {
   width: 19%;
   height: auto;
-  /* transition: transform 0.5s ease; */
 }
 
 /* .intro-content img[wobble='1'] {
@@ -96,7 +96,7 @@
 
 .intro-text {
   text-align: left;
-  font-size: 17px;
+  font-size: 1em;
   margin-top: 29px;
 }
 
@@ -109,8 +109,8 @@
 /* ---------------------------------------------------------------------------------------------------------------------------------- */
 
 .proj-bg-tall {
-  width: 288px;
-  height: 576px;
+  width: auto;
+  height: 110%;
 }
 
 .skills-box {
@@ -130,8 +130,8 @@
 }
 
 .proj-bg-long {
-  width: 592px;
-  height: 288px;
+  width: 100%;
+  height: auto;
 }
 
 .darkmode {
@@ -326,6 +326,7 @@ button:disabled svg {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: transparent !important;
 }
 
 .map-avatar img {

@@ -1,0 +1,106 @@
+@import "home.css";
+@import "/src/nav.css";
+@import "/src/Cards/cards.css";
+
+/* Large desktop */
+@media (min-width: 1200px) {
+  body {
+    background-color: cadetblue !important;
+  }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .nav-container {
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 20px !important;
+    margin-top: 20px !important;
+  }
+
+  .nav-contact {
+    display: none;
+  }
+
+  .intro-content img {
+    width: 22vw !important;
+    height: auto;
+  }
+
+  .wrapper {
+    margin: auto !important;
+    display: grid !important;
+    grid-auto-columns: repeat(10px) !important;
+    grid-auto-rows: 25vh !important;
+    grid-template-columns: auto auto !important;
+    grid-template-rows: 1fr !important;
+    gap: 1em 1em !important;
+    padding: 5px 20px 80px 20px !important;
+  }
+
+  // INTRO
+  .wrapper div:nth-child(1) {
+    grid-column: 1 / 3 !important;
+    grid-row: 2 / 4 !important;
+  }
+  // MAP
+  .wrapper div:nth-child(2) {
+    grid-column: 1 / 3 !important;
+    grid-row: 4 !important;
+  }
+  // PROJECT 1
+  .wrapper div:nth-child(3) {
+    grid-column: 2 !important;
+    grid-row: 5 / 7 !important;
+    // background-color: white;
+  }
+  //DARK MODE
+  .wrapper div:nth-child(4) {
+    grid-column: 1 !important;
+    grid-row: 5 !important;
+    // background-color: white;
+  }
+  // LINKEDIN
+  .wrapper div:nth-child(5) {
+    grid-column: 1 !important;
+    grid-row: 6 !important;
+    // background-color: white;
+  }
+  // PROJECT 2
+  .wrapper div:nth-child(6) {
+    display: none;
+    // background-color: white;
+  }
+  // GITHUB
+  .wrapper div:nth-child(7) {
+    grid-column: 1 / 3 !important;
+    grid-row: 8 !important;
+    // background-color: white;
+  }
+  // ABOUT
+  .wrapper div:nth-child(8) {
+    grid-column: 1 / 3 !important;
+    grid-row: 7 / 9 !important;
+    // background-color: white;
+  }
+  // PROJECT 3
+  .wrapper div:nth-child(9) {
+    grid-column: 1 / 3 !important;
+    grid-row: 9 !important;
+    background-color: white;
+  }
+  // CONTACT
+  .wrapper div:nth-child(10) {
+    grid-column: 1 / 3 !important;
+    grid-row: 10 !important;
+    background-color: white;
+  }
+}

@@ -6,7 +6,7 @@ function nav() {
         <div className="nav-container">
             <h1>jack</h1>
             <h1>nav options</h1>
-            <h1>contact</h1>
+            <h1 className="nav-contact">contact</h1>
         </div>
     )
 }
