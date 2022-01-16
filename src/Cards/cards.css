@@ -255,6 +255,7 @@ div .github {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: transparent !important;
 }
 
 .map-container {
@@ -263,6 +264,7 @@ div .github {
   bottom: 0;
   left: 0;
   right: 0;
+  background-color: transparent !important;
 }
 
 .mapboxgl-ctrl-top-left,
