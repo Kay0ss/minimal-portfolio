@@ -18,10 +18,10 @@ export default function App() {
           <Router>
             <Nav />
             <Routes>
-              <Route exact path="/" element={<Home />} />
-              <Route exact path="/about" element={<About />} />
-              <Route exact path="/projects" element={<Projects />} />
-              <Route exact path="/tools" element={<Tools />} />
+              <Route exact path="/minimal-portfolio" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/projects" element={<Projects />} />
+              <Route path="/tools" element={<Tools />} />
             </Routes>
           </Router>
         </div>

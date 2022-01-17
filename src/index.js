@@ -5,6 +5,7 @@ import './index.css';
 import './media.scss';
 import App from './app.js';
 import reportWebVitals from './reportWebVitals';
+import Router from "./app"
 
 
 
