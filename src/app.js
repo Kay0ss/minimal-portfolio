@@ -2,10 +2,10 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Nav from "./nav";
 
-import Home from "./Home";
-import About from "./About";
-import Projects from "./Projects";
-import Tools from "./tools";
+import Home from "./pages/Home/Home";
+import About from "./pages/About/About";
+import Projects from "./pages/Projects/Projects";
+import Tools from "./pages/Tools/tools";
 
 // import { UserContext, UserProvider } from "./utils/UserContext";
 

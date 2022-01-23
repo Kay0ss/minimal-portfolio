@@ -193,9 +193,8 @@
   justify-content: space-between;
   background-color: white;
   color: black;
-  width: 105px;
+  width: 103px;
   padding: 5px;
-  height: auto;
   text-decoration: none;
   position: absolute;
   height: 36px;
@@ -203,15 +202,35 @@
   bottom: 20px;
   left: 20px;
   border-radius: 100px;
-  transition: all 0.2s ease-out 0s;
+  transition: all 0.4s ease;
 }
+
+/* .proj-1:hover .arrow-btn-long, .proj-container:hover .arrow-btn-long {
+  width: 105px;
+} */
+
 .arrow-btn-long:hover {
   box-shadow: #e1e1e1bb 0 0 0 5px;
 }
+
+/* .arrow-btn-long p, .btn-text {
+  margin-left: 15px;
+  transition: opacity 0.3s ease;
+  right: 0;
+  opacity: 0;
+  white-space: nowrap;
+}
+
+.proj-1:hover .arrow-btn-long p, .btn-text{
+  opacity: 1;
+  transform: translateX(10px);
+} */
 .arrow-btn-long svg {
+  /* position: absolute; */
+  opacity: 1;
   width: 12px !important;
   color: #0d1117;
-  stroke-width: 1px;
+  stroke-width: 1px !important;
 }
 
 .btn-text:link,

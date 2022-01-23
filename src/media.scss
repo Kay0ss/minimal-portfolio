@@ -1,4 +1,4 @@
-@import "home.css";
+@import "./pages/Home/home.css";
 @import "/src/nav.css";
 @import "/src/Cards/cards.css";
 
@@ -24,6 +24,7 @@
     gap: 2rem;
     margin-bottom: 20px !important;
     margin-top: 20px !important;
+    height: 85px !important;
   }
 
   .nav-contact {
@@ -39,7 +40,7 @@
     margin: auto !important;
     display: grid !important;
     grid-auto-columns: repeat(10px) !important;
-    grid-auto-rows: 25vh !important;
+    grid-auto-rows: 20vh !important;
     grid-template-columns: auto auto !important;
     grid-template-rows: 1fr !important;
     gap: 1em 1em !important;
