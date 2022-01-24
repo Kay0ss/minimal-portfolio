@@ -1,10 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Orelega+One&display=swap");
 
+body.dark-mode .box-linkedin, body.dark-mode .github {
+  background-color: transparent;
+}
+
+body.dark-mode .proj-1 {
+  background-image: none;
+}
+
 .box {
   /* border-radius: 32px;
     background-color: white;
     border: none;
     text-align: center; */
+  border: 2px solid rgb(246, 242, 242);
   box-shadow: transparent 0 0 0 2px inset;
   overflow: hidden;
   border-radius: 32px;
@@ -55,7 +64,6 @@
   height: 100%;
   flex-direction: column;
   justify-content: space-evenly;
-  background-color: white;
 }
 
 .intro {
@@ -110,7 +118,7 @@
 
 .proj-bg-tall {
   width: auto;
-  height: 110%;
+  height: 100.3%;
 }
 
 .proj-1 {
@@ -130,11 +138,12 @@
   top: 5%;
   gap: 1rem;
   background-color: rgba(105, 133, 197, 0) !important;
-  width: 288px;
+  width: 100%;
   height: 90%;
 }
 .skills-box svg {
   color: rgb(43, 54, 74);
+  height: 90px !important;
 }
 
 .proj-container {
@@ -162,7 +171,7 @@
   height: 100%;
   display: flex;
   justify-content: center;
-  background-color: rgb(105, 132, 197) !important;
+  background-color: rgb(105, 132, 197);
 }
 .arrow-btn {
   display: flex;
@@ -257,7 +266,7 @@ div .github {
   height: 100%;
   justify-content: center;
   align-items: center;
-  background-color: rgb(114, 212, 181) !important;
+  background-color: rgb(114, 212, 181);
   color: #f0f2f8;
 }
 
@@ -285,6 +294,8 @@ div .github {
   justify-content: center;
   align-items: center;
   background-color: transparent !important;
+  width: 100%;
+  height: auto;
 }
 
 .map-container {

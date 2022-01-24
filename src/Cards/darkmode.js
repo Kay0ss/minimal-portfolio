@@ -12,7 +12,7 @@ import "./cards.css";
           className="dm-toggle"
           onChange={darkMode.toggle}
           checked={darkMode.value}
-          size={130}
+          size={120}
           element={document.cards}
         />
 

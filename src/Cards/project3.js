@@ -11,7 +11,7 @@ function Project3() {
         
         <a
           className="arrow-btn-long"
-          href="https://www.linkedin.com/in/jacktheisen/"
+          href="https:www.jackt.xyz"
           target="_blank"
         >
           <BsArrowUpRight />
