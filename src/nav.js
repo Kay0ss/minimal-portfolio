@@ -27,7 +27,7 @@ function nav() {
         </NavLink>
         <div className="animation"></div>
       </div>
-      <h1 className="nav-contact">contact</h1>
+      <a href="mailto: jackschoolbiz@gmail.com?subject=Portfolio Inquiry" id="nav-contact">Contact</a>
     </div>
   );
 }

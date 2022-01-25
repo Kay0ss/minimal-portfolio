@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap');
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
 Body {
     background-color: rgb(246, 242, 242);
     font-family: Verdana;
@@ -20,6 +27,7 @@ body.dark-mode .wrapper .box{
 /* body.dark-mode .button-toggle {
   background-color: rgb(246, 242, 242);
 } */
+
 
 body.dark-mode .button-toggle:hover {
   box-shadow: rgba(169, 169, 169, 0.708) 0 0 0 5px;

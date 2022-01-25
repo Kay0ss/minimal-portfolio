@@ -65,11 +65,18 @@ h1:nth-child(3) {
   width: 100%;
   text-align: center;
   border-radius: 15px;
-  padding: 3px 10px 3px 10px;
-  font-weight: 400;
+  padding: 3px 9px 3px 8px;
+  font-weight: 500;
   font-size: 14px;
   z-index: 1;
   display: inline;
+}
+
+.navbar #nav-btn1:hover,
+#nav-btn2:hover,
+#nav-btn3:hover,
+#nav-btn4:hover {
+  color:rgb(111, 111, 111);
 }
 
 .active1, .active2, .active3, .active4, .active {
@@ -111,4 +118,15 @@ h1:nth-child(3) {
 
 #nav-btn4.active ~ .animation {
     margin-left: 75%;
+}
+
+#nav-contact {
+  font-size: 18px;
+  font-weight: 500;
+  margin-right: 18.6px;
+  padding: 8px;
+}
+
+#nav-contact:hover {
+  color: rgb(110, 131, 192);
 }
