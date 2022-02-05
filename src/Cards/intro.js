@@ -3,6 +3,7 @@ import "./cards.css";
 // import noLockdown from "../images/no-lockdown.png";
 // import lockdown from "../images/lockdown.png";
 import ReactDOM from "react-dom";
+import { Draggable } from "react-beautiful-dnd";
 
 class Intro extends React.Component {
   constructor(props) {
@@ -50,6 +51,7 @@ class Intro extends React.Component {
     //     img.classList.add('fade-in');
     //   }
     return (
+      // <Draggable draggableId="intro">
       <div className="box intro">
         <div className="intro-content">
           <img
@@ -137,6 +139,7 @@ class Intro extends React.Component {
           </a>
         </div>
       </div>
+      // </Draggable>
     );
   }
 }

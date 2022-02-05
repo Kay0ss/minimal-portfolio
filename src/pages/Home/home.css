@@ -6,20 +6,25 @@
 }
 
 Body {
-    background-color: rgb(246, 242, 242);
-    font-family: Verdana;
+  background-color: rgb(246, 242, 242);
+  font-family: Verdana;
+  transition: all 0.8s ease;
+}
+
+Body .wrapper {
+  transition: all 0.8s ease;
 }
 
 body.dark-mode{
-  background-color: rgb(23, 23, 23);
-  color:rgb(246, 242, 242);
+  background-color: rgb(38, 38, 53);
+  color:rgb(141, 148, 162);
 }
 
 body.dark-mode .wrapper .box{
   /* background-color: rgb(27, 41, 56); */
   background-color: transparent;
   border: 2px solid rgb(111, 111, 111);
-  color: rgb(246, 242, 242);
+  color: rgb(141, 148, 162);
 }
 
 

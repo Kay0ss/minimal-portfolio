@@ -11,6 +11,8 @@ import Project2 from "../../Cards/project2.js";
 import Github from "../../Cards/github.js";
 import Project3 from "../../Cards/project3.js";
 import Contact from "../../Cards/contact.js";
+import { DragDropContext, Droppable, Draggable} from "react-beautiful-dnd";
+
 // import Nav from "./test-nav.js";
 
 function Home() {
@@ -18,6 +20,7 @@ function Home() {
     <>
       {/* <Nav /> */}
       <div class="wrapper">
+        {/* <DragDropContext> */}
         <Intro />
         <Map />
         <Project1 />
@@ -28,6 +31,7 @@ function Home() {
         <About />
         <Project3 />
         <Contact />
+        {/* </DragDropContext> */}
       </div>
     </>
   );

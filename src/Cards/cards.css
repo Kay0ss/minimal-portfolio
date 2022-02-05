@@ -5,8 +5,16 @@ body.dark-mode .box-linkedin, body.dark-mode .github {
   background-color: transparent;
 }
 
-body.dark-mode .proj-1 {
+body.dark-mode .proj-bg-tall {
+  display: none;
+}
+
+body.dark-mode .proj-container {
   background-image: none;
+}
+
+body.dark-mode .skills-box svg {
+  color: rgb(141, 148, 162);
 }
 
 .box {
@@ -123,12 +131,21 @@ body.dark-mode .proj-1 {
 }
 
 .proj-1 {
-  background-image: url("../images/project1-bg.png");
+  /* background-image: url("../images/project1-bg.png"); */
+  position: relative;
   background-size: cover;
   width: 100%;
   height: auto;
 }
 
+.proj-tall {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 3;
+}
 
 .skills-box {
   display: flex;
@@ -145,6 +162,7 @@ body.dark-mode .proj-1 {
 .skills-box svg {
   color: rgb(43, 54, 74);
   height: 90px !important;
+  /* transition: all 0.2s ease; */
 }
 
 .proj-container {
@@ -178,6 +196,7 @@ body.dark-mode .proj-1 {
   justify-content: center;
   background-color: rgb(105, 132, 197);
 }
+
 .arrow-btn {
   display: flex;
   align-items: center;
