@@ -10,25 +10,37 @@ mapboxgl.workerClass = require("worker-loader!mapbox-gl/dist/mapbox-gl-csp-worke
 
 mapboxgl.accessToken =
   "pk.eyJ1IjoiamFja3QxMjMiLCJhIjoiY2t5N3J3ZmpzMHJ0eDMxcW1veXIyOGphOSJ9.sC3ZTl21XLZbKPlvBPulJg";
+  
+  const Map = () => {
+    const mapContainerRef = useRef(null);
+    
+    const [lng, setLng] = useState(5);
+    const [lat, setLat] = useState(34);
+    const [zoom, setZoom] = useState(11.9);
+    
+    // Initialize map when component mounts
+    useEffect(() => {
+      const map = new mapboxgl.Map({
+        container: mapContainerRef.current,
+        style: "mapbox://styles/jackt123/cky7rzzh22c5515o1efhgnt85",
+        // style: "mapbox://styles/jackt123/",
+        center: [-93.264, 44.981],
+        zoom: "10",
+        maxZoom: 16,
+        minZoom: 1,
+        interactive: false,
+      });
+        
 
-const Map = () => {
-  const mapContainerRef = useRef(null);
 
-  const [lng, setLng] = useState(5);
-  const [lat, setLat] = useState(34);
-  const [zoom, setZoom] = useState(11.9);
 
-  // Initialize map when component mounts
-  useEffect(() => {
-    const map = new mapboxgl.Map({
-      container: mapContainerRef.current,
-      style: "mapbox://styles/jackt123/cky7rzzh22c5515o1efhgnt85",
-      center: [-93.264, 44.981],
-      zoom: "10",
-      maxZoom: 16,
-      minZoom: 1,
-      interactive: false,
-    });
+      function darkmode() {
+        map.setStyle("mapbox://styles/jackt123/ckzan2oc0000g14kdl8mqftkh");
+        console.log("darkmode");
+      }
+
+      
+
 
     map.scrollZoom.disable();
 
@@ -60,6 +72,11 @@ const Map = () => {
     document.getElementById("out").addEventListener("click", () => {
       document.getElementById("in").disabled = false;
       zoomOut();
+      darkmode();
+    });
+
+    document.getElementById("dm-toggle").addEventListener("click", () => {
+      darkmode();
     });
 
     document.getElementById("in").addEventListener("click", () => {
@@ -67,6 +84,8 @@ const Map = () => {
 
       zoomIn();
     });
+
+
 
     // Clean up on unmount
     return () => map.remove();
