@@ -178,6 +178,16 @@ body.dark-mode .skills-box svg {
   justify-content: center;
 }
 
+#dm-btn {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.dm-toggle {
+  position: relative;
+}
+
 .dm-toggle svg{
   height: 160px !important;
 }
@@ -312,6 +322,11 @@ div .github {
 
 /* MAP STYLES */
 
+.hidden {
+  display: none !important;
+  visibility: hidden !important;
+}
+
 .mapbox {
   display: relative;
   display: flex;
@@ -320,6 +335,7 @@ div .github {
   background-color: transparent !important;
   width: 100%;
   height: auto;
+  background-image: url("https://api.mapbox.com/styles/v1/jackt123/ckzan2oc0000g14kdl8mqftkh.html?title=false&access_token=pk.eyJ1IjoiamFja3QxMjMiLCJhIjoiY2t5N3J3ZmpzMHJ0eDMxcW1veXIyOGphOSJ9.sC3ZTl21XLZbKPlvBPulJg&zoomwheel=false#12/48.8665/2.3176");
 }
 
 .map-container {

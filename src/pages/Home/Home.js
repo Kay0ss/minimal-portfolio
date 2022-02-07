@@ -3,7 +3,6 @@ import "./home.css";
 // import 'mapbox-gl/dist/mapbox-gl.css';
 import Intro from "../../Cards/intro";
 import About from "../../Cards/about";
-import Map from "../../Cards/map.js";
 import Project1 from "../../Cards/project1";
 import DarkMode from "../../Cards/darkmode";
 import Linkedin from "../../Cards/linkedin.js";
@@ -11,6 +10,7 @@ import Project2 from "../../Cards/project2.js";
 import Github from "../../Cards/github.js";
 import Project3 from "../../Cards/project3.js";
 import Contact from "../../Cards/contact.js";
+import Map from "../../Cards/map.js";
 import { DragDropContext, Droppable, Draggable} from "react-beautiful-dnd";
 
 // import Nav from "./test-nav.js";

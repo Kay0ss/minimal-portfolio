@@ -33,6 +33,9 @@ body.dark-mode .wrapper .box{
   background-color: rgb(246, 242, 242);
 } */
 
+.hidden {
+  display: none !important;
+}
 
 body.dark-mode .button-toggle:hover {
   box-shadow: rgba(169, 169, 169, 0.708) 0 0 0 5px;
