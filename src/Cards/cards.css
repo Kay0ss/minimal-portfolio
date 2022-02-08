@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
 
 body.dark-mode .box-linkedin, body.dark-mode .github {
+  color: rgb(141, 148, 162);
   background-color: transparent;
 }
 
