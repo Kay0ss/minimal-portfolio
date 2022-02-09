@@ -5,7 +5,6 @@ import "./cards.css";
 import useDarkMode from "use-dark-mode";
 import avatar from "../images/no-lockdown.png";
 import DarkMode from "./darkmode";
-import DarkMap from "./darkmap";
 
 
 // Light map ========================================================================================
@@ -16,7 +15,7 @@ mapboxgl.workerClass = require("worker-loader!mapbox-gl/dist/mapbox-gl-csp-worke
 mapboxgl.accessToken =
 "pk.eyJ1IjoiamFja3QxMjMiLCJhIjoiY2t5N3J3ZmpzMHJ0eDMxcW1veXIyOGphOSJ9.sC3ZTl21XLZbKPlvBPulJg";
 
-const Map = () => {
+const DarkMap = () => {
   const mapContainerRef = useRef(null);
   const darkMode = useDarkMode(false);
   
@@ -35,7 +34,7 @@ const Map = () => {
   useEffect(() => {
     const map = new mapboxgl.Map({
       container: mapContainerRef.current,
-      style: "mapbox://styles/jackt123/cky7rzzh22c5515o1efhgnt85",
+      style: "mapbox://styles/jackt123/ckzan2oc0000g14kdl8mqftkh",
       center: [-93.264, 44.981],
       zoom: "10",
       maxZoom: 16,
@@ -76,43 +75,42 @@ const Map = () => {
       
       document.getElementById("out").addEventListener("click", () => {
         document.getElementById("in").disabled = false;
+
         zoomOut();
       });
       
       
       document.getElementById("in").addEventListener("click", () => {
         document.getElementById("out").disabled = false;
+
         zoomIn();
       });
-      
-      
-      
       // Clean up on unmount
       return () => map.remove();
     }, []); // eslint-disable-line react-hooks/exhaustive-deps
     
     
     return (
-      <div className="box mapbox">
-      <div className="map-container" id="light" ref={mapContainerRef} />
+      <div className="box mapbox" id="dark">
+      <div className="map-container" ref={mapContainerRef} />
       <button
         id="out"
-        className="Map__ZoomButton-sc-12s41qg-4 eTWOUV light-button"
+        className="Map__ZoomButton-sc-12s41qg-4 eTWOUV dark-button"
         style={{ left: "20px", opacity: "1", transform: "none" }}
-        >
+      >
         <svg
           id="plus-add.3"
           xmlns="http://www.w3.org/2000/svg"
           width="24"
           height="24"
           viewBox="0 0 24 24"
-          >
+        >
           <path
             id="Path_13"
             data-name="Path 13"
             d="M0,0H24V24H0Z"
             fill="none"
-            ></path>
+          ></path>
           <path
             id="Path_15"
             data-name="Path 15"
@@ -122,27 +120,27 @@ const Map = () => {
             stroke-linecap="round"
             stroke-linejoin="round"
             stroke-width="1.5"
-            ></path>
+          ></path>
         </svg>
       </button>
       <button
         id="in"
-        className="Map__ZoomButton-sc-12s41qg-4 eTWOUV light-button"
+        class="Map__ZoomButton-sc-12s41qg-4 eTWOUV dark-button"
         style={{ right: "20px", opacity: "1", transform: "none" }}
-        >
+      >
         <svg
           id="plus-add.3"
           xmlns="http://www.w3.org/2000/svg"
           width="24"
           height="24"
           viewBox="0 0 24 24"
-          >
+        >
           <path
             id="Path_13"
             data-name="Path 13"
             d="M0,0H24V24H0Z"
             fill="none"
-            ></path>
+          ></path>
           <path
             id="Path_14"
             data-name="Path 14"
@@ -152,7 +150,7 @@ const Map = () => {
             stroke-linecap="round"
             stroke-linejoin="round"
             stroke-width="1.5"
-            ></path>
+          ></path>
           <path
             id="Path_15"
             data-name="Path 15"
@@ -162,19 +160,14 @@ const Map = () => {
             stroke-linecap="round"
             stroke-linejoin="round"
             stroke-width="1.5"
-            ></path>
+          ></path>
         </svg>
       </button>
-      <div style={{ transform: "none"}} className="map-avatar" id="light">
+      <div style={{ transform: "none" }} className="map-avatar">
         <div className="avatar"><img src={avatar} alt="map avatar" /></div>
       </div>
-      {/* <DarkMap /> */}
     </div>
   );
 };
 
-
-
-
-
-export default Map;
+export default DarkMap;

@@ -19,7 +19,6 @@ const DarkMode = () => {
         >
 
         </DarkModeToggle>
-        <button onClick={console.log("yup")}>log</button>
       </div>
     );
 
