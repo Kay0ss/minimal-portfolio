@@ -2,8 +2,7 @@ import React, { useRef, useEffect, useState } from "react";
 import mapboxgl from "mapbox-gl";
 import MapboxWorker from 'worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker';
 import "./cards.css";
-import { FaDailymotion } from "react-icons/fa";
-import { BsQuestionSquare } from "react-icons/bs";
+import useDarkMode from "use-dark-mode";
 import avatar from "../images/no-lockdown.png";
 import DarkMode from "./darkmode";
 
@@ -14,101 +13,98 @@ import DarkMode from "./darkmode";
 mapboxgl.workerClass = require("worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker").default;
 
 mapboxgl.accessToken =
-  "pk.eyJ1IjoiamFja3QxMjMiLCJhIjoiY2t5N3J3ZmpzMHJ0eDMxcW1veXIyOGphOSJ9.sC3ZTl21XLZbKPlvBPulJg";
+"pk.eyJ1IjoiamFja3QxMjMiLCJhIjoiY2t5N3J3ZmpzMHJ0eDMxcW1veXIyOGphOSJ9.sC3ZTl21XLZbKPlvBPulJg";
+
+const Map = () => {
+  const mapContainerRef = useRef(null);
+  const darkMode = useDarkMode(false);
   
-  export const Map = () => {
-    const mapContainerRef = useRef(null);
+  // const styles = ["mapbox://styles/jackt123/ckzan2oc0000g14kdl8mqftkh", "mapbox://styles/jackt123/cky7rzzh22c5515o1efhgnt85"]
+  // var s = 0;
+  
+  // function DarkStyle() {
+  //   s++;
+  //   if (s === styles.length) {
+  //     s = 0;
+  //   }
+  // }
+  let style = '';
+  const dark = "mapbox://styles/jackt123/ckzan2oc0000g14kdl8mqftkh";
+  const light = "mapbox://styles/jackt123/cky7rzzh22c5515o1efhgnt85";
+  
+  if (darkMode.value === true) {
+    style = dark;
+    console.log(dark);
+  } else {
+    style = light;
+    console.log(light);
+  }
+  
+  // Initialize map when component mounts
+  useEffect(() => {
+    const map = new mapboxgl.Map({
+      container: mapContainerRef.current,
+      style: "mapbox://styles/jackt123/ckzan2oc0000g14kdl8mqftkh",
+      center: [-93.264, 44.981],
+      zoom: "10",
+      maxZoom: 16,
+      minZoom: 1,
+      interactive: false,
+    });
     
-    const [lng, setLng] = useState(5);
-    const [lat, setLat] = useState(34);
-    const [zoom, setZoom] = useState(11.9);
-    
-    // Initialize map when component mounts
-    useEffect(() => {
-      const map = new mapboxgl.Map({
-        container: mapContainerRef.current,
-        style: "mapbox://styles/jackt123/cky7rzzh22c5515o1efhgnt85",
-        // style: "mapbox://styles/jackt123/ckzan2oc0000g14kdl8mqftkh",
-        center: [-93.264, 44.981],
-        zoom: "10",
-        maxZoom: 16,
-        minZoom: 1,
-        interactive: false,
+    map.setStyle(style);
+
+    console.log(map)
+    // Add zoom and rotation controls to the map.
+      map.scrollZoom.disable();
+      
+      
+      const zoomLevel = [16, 14, 12, 10, 8, 6, 4];
+      var i = 3;
+      
+      function zoomOut() {
+        i = (i + 1) % zoomLevel.length;
+        map.flyTo({ zoom: zoomLevel[i] });
+        
+        if (zoomLevel[i] >= 6) {
+          return zoomOut;
+        } else {
+          document.getElementById("out").disabled = true;
+        }
+      }
+      
+      function zoomIn() {
+        i = (i - 1) % zoomLevel.length;
+        map.flyTo({ zoom: zoomLevel[i] });
+        
+        if (zoomLevel[i] <= 14) {
+          return zoomIn;
+        } else {
+          document.getElementById("in").disabled = true;
+        }
+      }
+      
+      document.getElementById("out").addEventListener("click", () => {
+        document.getElementById("in").disabled = false;
+        zoomOut();
       });
-
-    map.scrollZoom.disable();
-
-
-    const styles = ["mapbox://styles/jackt123/ckzan2oc0000g14kdl8mqftkh", "mapbox://styles/jackt123/cky7rzzh22c5515o1efhgnt85"]
-    var s = 0;
-
-    function DarkStyle() {
-      map.setStyle(styles[s]);
-      s++;
-      if (s === styles.length) {
-        s = 0;
-      }
-    }
-
-    const zoomLevel = [16, 14, 12, 10, 8, 6, 4];
-    var i = 3;
-
-    function zoomOut() {
-      i = (i + 1) % zoomLevel.length;
-      map.flyTo({ zoom: zoomLevel[i] });
-
-      if (zoomLevel[i] >= 6) {
-        return zoomOut;
-      } else {
-        document.getElementById("out").disabled = true;
-      }
-    }
-
-    function zoomIn() {
-      i = (i - 1) % zoomLevel.length;
-      map.flyTo({ zoom: zoomLevel[i] });
-
-      if (zoomLevel[i] <= 14) {
-        return zoomIn;
-      } else {
-        document.getElementById("in").disabled = true;
-      }
-    }
-
-    document.getElementById("out").addEventListener("click", () => {
-      document.getElementById("in").disabled = false;
-      zoomOut();
-    });
-
-    const dmToggle = document.getElementById("dm-btn");
-
-    // window.onload = function() {
-    // dmToggle.addEventListener("click", () => {
-    //   DarkStyle();
-    //   console.log("clicked");
-    // })};
-
-    // const darkSwitch = document.getElementById("dm-btn");
-    // darkSwitch.addEventListener("click", () => {
-    //   DarkStyle()
-    // });
-
-
-    document.getElementById("in").addEventListener("click", () => {
-      document.getElementById("out").disabled = false;
-
-      zoomIn();
-    });
-
-
-
-    // Clean up on unmount
-    return () => map.remove();
-  }, []); // eslint-disable-line react-hooks/exhaustive-deps
-
-
-  return (
-    <div className="box mapbox">
+      
+      
+      document.getElementById("in").addEventListener("click", () => {
+        document.getElementById("out").disabled = false;
+        
+        zoomIn();
+      });
+      
+      
+      
+      // Clean up on unmount
+      return () => map.remove();
+    }, []); // eslint-disable-line react-hooks/exhaustive-deps
+    
+    
+    return (
+      <div className="box mapbox">
       <div className="map-container" id="light"ref={mapContainerRef} />
       <button
         id="out"
