@@ -20,7 +20,7 @@ body.dark-mode .container-border {
     align-items: start;
     flex-direction: column;
     margin: auto;
-    width: 95%;
+    /* width: 95%; */
     padding: 5px 10px 80px 10px;
     border-radius: 30px;
     /* background-color: white; */
@@ -42,7 +42,6 @@ body.dark-mode .container-border {
 
 .me {
     display: inline-block;
-    margin-left: 2.5%;
     width: 150px;
     height: auto;
 }

@@ -4,9 +4,9 @@ import me from "../../images/meLaptop.png";
 
 function About() {
   return (
-    <div className="container-border">
+    <div className="wrapper">
+      <div className="box container">
       <img className="me" src={me} alt="me" />
-      <div className="container">
           &nbsp;
         <p>
           I'm <span className="jack">jack</span>, I'm a full stack web developer

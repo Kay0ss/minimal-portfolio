@@ -22,12 +22,12 @@
   .nav-container {
     flex-direction: column;
     gap: 2rem;
-    margin-bottom: 20px !important;
+    margin-bottom: 40px !important;
     margin-top: 20px !important;
-    height: 85px !important;
+    height: 80px !important;
   }
 
-  .nav-contact {
+  #nav-contact {
     display: none;
   }
 
@@ -36,15 +36,16 @@
     height: auto;
   }
 
-  .wrapper {
+  .wrapper{
     margin: auto !important;
     display: grid !important;
     grid-auto-columns: repeat(10px) !important;
-    grid-auto-rows: 20vh !important;
+    grid-auto-rows: 22.6vh !important;
     grid-template-columns: auto auto !important;
     grid-template-rows: 1fr !important;
     gap: 1em 1em !important;
     padding: 5px 20px 80px 20px !important;
+    min-height: 100px;
   }
 
   // INTRO
@@ -63,6 +64,10 @@
     grid-row: 5 / 7 !important;
     // background-color: white;
   }
+
+  .proj-tall {
+    top: -20px !important;
+  }
   //DARK MODE
   .wrapper div:nth-child(4) {
     grid-column: 1 !important;
@@ -75,6 +80,7 @@
     grid-row: 6 !important;
     // background-color: white;
   }
+
   // PROJECT 2
   .wrapper div:nth-child(6) {
     display: none;
@@ -98,10 +104,32 @@
     grid-row: 10 !important;
     background-color: white;
   }
+
+  .proj-bg {
+    margin-left: 40px;
+  }
   // CONTACT
   .wrapper div:nth-child(10) {
     grid-column: 2 !important;
     grid-row: 9 !important;
     background-color: white;
   }
+
+  .contact-content, .contact-header {
+    display: none;
+  }
+
+  .arrow-btn-contact {
+    margin: auto !important;
+    left: 0;
+    right: 0 !important;
+    top: 0 !important;
+    bottom: 0 !important;
+  }
+
+  // ABOUT SECTION ============================================================
+  .container-border {
+    width: 89%;
+  }
+
 }
