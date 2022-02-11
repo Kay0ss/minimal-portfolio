@@ -1,47 +1,98 @@
-
-body.dark-mode .container {
-    background-color: transparent;
-}
-
 body.dark-mode .container p {
   color: rgb(141, 148, 162);
 }
 
-body.dark-mode .container-border {
-    border: 2px solid rgb(111, 111, 111);
-    background-color: transparent;
+body.dark-mode .container,
+body.dark-mode .experiences,
+body.dark-mode .skills {
+  border: 2px solid rgb(111, 111, 111);
+  background-color: transparent;
 }
 
-
 .container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  /* margin-top: 30px !important; */
+  margin: auto;
+  margin-bottom: 30px;
+  max-width: 1200px;
+  padding: 5px 20px 40px 20px;
+  border-radius: 30px;
+  /* background-color: white; */
+}
+
+.experiences {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  margin: auto;
+  margin-bottom: 30px;
+  max-width: 1200px;
+  padding: 15px 10px 15px 15px;
+  border-radius: 30px;
+  /* background-color: white; */
+}
+
+.experiences-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.experiences-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.experiences-title {
+  font-family: "Orelega One", cursive;
+  font-size: 2em;
+}
+
+.skills {
     display: flex;
     position: relative;
     justify-content: center;
     align-items: start;
     flex-direction: column;
     margin: auto;
-    /* width: 95%; */
-    padding: 5px 10px 80px 10px;
+    margin-bottom: 30px;
+    max-width: 1200px;
+    padding: 15px 10px 15px 15px;
     border-radius: 30px;
     /* background-color: white; */
 }
 
-.container p {
-    font-size: 1.2em;
-    margin: 0;
-    padding: 0;
-    color: #0d1117;
+.skills-title {
+    font-family: "Orelega One", cursive;
+    font-size: 2em;
 }
 
-.container-border {
-    background-color: white;
-    border-radius: 30px;
-    max-width: 1200px;
-    margin: auto;
+.skills-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills-content img {
+    width: 90px;
+    height: auto;
+}
+
+.container p {
+  font-size: 1.2em;
+  margin: 0;
+  padding: 0;
+  color: #0d1117;
 }
 
 .me {
-    display: inline-block;
-    width: 150px;
-    height: auto;
+  display: inline-block;
+  width: 150px;
+  height: auto;
 }

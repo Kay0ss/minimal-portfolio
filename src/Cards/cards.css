@@ -340,7 +340,7 @@ div .github {
   align-items: center;
   background-color: transparent !important;
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .map-container {

@@ -132,4 +132,18 @@
     width: 89%;
   }
 
+  .container, .experiences, .skills{
+    width: 89%;
+  }
+
+  .container {
+    margin-top: 60px !important;
+  }
+  
+
+  // SKILLS SECTION ============================================================
+  .skills-content {
+    justify-content: center;
+    gap: 15px !important;
+  }
 }
