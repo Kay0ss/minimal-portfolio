@@ -7,6 +7,7 @@ import About from "./pages/About/About";
 import Projects from "./pages/Projects/Projects";
 import Tools from "./pages/Tools/tools";
 
+
 // import { UserContext, UserProvider } from "./utils/UserContext";
 
 
@@ -17,7 +18,7 @@ export default function App() {
         <div>
           <Router>
             <Nav />
-            <Routes>
+            <Routes className="routes">
               <Route exact path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/projects" element={<Projects />} />

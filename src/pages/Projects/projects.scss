@@ -1,0 +1,49 @@
+body.dark-mode .proj-logo {
+}
+
+.proj-page-container {
+  margin: auto;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-auto-rows: 288px;
+  gap: 1em 1em;
+  padding: 5px 10px 10px 10px;
+}
+
+.proj-page-container img {
+    width: 100%;
+    height: auto;
+}
+
+.proj {
+    height: auto;
+    position: relative;
+    width: 273px;
+    // width: 100%;
+}
+
+.proj iframe {
+    height: 100%;
+    width: 300px;
+}
+
+.proj-page-container article:nth-child(1) {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.proj-page-container article:nth-child(2) {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.proj-page-container article:nth-child(3) {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.proj-page-container article:nth-child(4) {
+  grid-column: 4;
+  grid-row: 1;
+}

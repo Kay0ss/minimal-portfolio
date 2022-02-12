@@ -8,7 +8,9 @@ import Html from "../../images/Html.png";
 import Css from "../../images/css.png";
 import Bootstrap from "../../images/bootstrap.png";
 import javascript from "../../images/javascript.png";
-import React from "../../images/react.png"
+import React from "../../images/react.png";
+import github from "../../images/icon-maker.png";
+import linkedin from "../../images/linkedin.png";
 
 function About() {
   return (
@@ -45,7 +47,7 @@ function About() {
           />
           &nbsp; &nbsp;
           <div className="experiences-content">
-            <h6 className="job-content">Junior Front-End Developer</h6>
+            <h6 className="job-content" style={{fontWeight: "bold"}}>Junior Front-End Developer</h6>
             <h5 className="job-content">Valorem Foundation</h5>
             <h6 className="job-content">Dec 2021 - Present</h6>
           </div>
@@ -54,16 +56,26 @@ function About() {
       <div className="skills">
         <h1 className="skills-title">Tools I use everyday</h1>
         &nbsp;
-          <div className="skills-content">
-            <img src={Photoshop} alt="Photoshop" className="skills-logo" />
-            {/* <img src={Illustrator} alt="Illustrator" className="skills-logo" /> */}
-            <img src={Html} alt="HTML" className="skills-logo" />
-            <img src={Css} alt="CSS" className="skills-logo" />
-            <img src={Bootstrap} alt="Bootstrap" className="skills-logo" />
-            <img src={javascript} alt="Javascript" className="skills-logo" />
-            <img src={React} alt="React" className="skills-logo" />
-          </div>
-    </div>
+        <div className="skills-content">
+          <img src={Photoshop} alt="Photoshop" className="skills-logo" />
+          {/* <img src={Illustrator} alt="Illustrator" className="skills-logo" /> */}
+          <img src={Html} alt="HTML" className="skills-logo" />
+          <img src={Css} alt="CSS" className="skills-logo" />
+          <img src={Bootstrap} alt="Bootstrap" className="skills-logo" />
+          <img src={javascript} alt="Javascript" className="skills-logo" />
+          <img src={React} alt="React" className="skills-logo" />
+          <br />
+          <br />
+        </div>
+      </div>
+      {/* <div className="skills">
+        <h1 className="skills-title">Socials</h1>
+        &nbsp;
+        <div className="skills-content">
+          <img src={github} alt="github" className="skills-logo" />
+          <img src={linkedin} alt="linkedin" className="skills-logo" />
+        </div>
+      </div> */}
     </>
   );
 }

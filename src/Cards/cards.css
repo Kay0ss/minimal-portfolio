@@ -247,7 +247,8 @@ body.dark-mode .skills-box svg {
   justify-content: space-between;
   background-color: white;
   color: black;
-  width: 103px;
+  /* width: 103px; */
+  gap: 6px;
   padding: 5px;
   text-decoration: none;
   position: absolute;
