@@ -35,7 +35,7 @@ function About() {
         </p>
       </div>
       <div className="experiences">
-        <h3 className="experiences-title">Experiences</h3>
+        <h3 className="experiences-title">Experience</h3>
         &nbsp;
         <div className="experiences-container">
           <img
@@ -57,7 +57,7 @@ function About() {
         <h1 className="skills-title">Tools I use everyday</h1>
         &nbsp;
         <div className="skills-content">
-          <img src={Photoshop} alt="Photoshop" className="skills-logo" />
+          <img src={Photoshop} alt="Photoshop" className="skills-logo" style={{borderRadius: "10px"}} />
           {/* <img src={Illustrator} alt="Illustrator" className="skills-logo" /> */}
           <img src={Html} alt="HTML" className="skills-logo" />
           <img src={Css} alt="CSS" className="skills-logo" />

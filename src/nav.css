@@ -3,6 +3,10 @@ body.dark-mode .navbar {
   border: 2px solid rgb(111, 111, 111);
 }
 
+body .dark-mode .animation {
+  background-color: rgb(141, 148, 162) !important;
+} 
+
 
 .nav-container {
   display: flex;

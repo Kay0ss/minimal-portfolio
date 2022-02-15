@@ -1,9 +1,12 @@
+// Body .dark-mode .Photoshop, Body .dark-mode .Figma, Body
+
 .Photoshop {
     background-image: url("../../images/photoshop.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     padding: 20px;
+    background-color: rgb(6, 24, 52);
 }
 
 .Figma {
@@ -12,6 +15,7 @@
     background-repeat: no-repeat;
     background-position: center;
     padding: 20px;
+    background-color: rgb(31, 30, 30);
 }
 
 .CDT {
@@ -20,6 +24,7 @@
     background-repeat: no-repeat;
     background-position: center;
     padding: 20px;
+    background-color: rgb(74, 127, 246);
 }
 
 .CSS {
@@ -28,6 +33,7 @@
     background-repeat: no-repeat;
     background-position: center;
     padding: 20px;
+    background-color: rgb(84, 163, 206);
 }
 
 .Bootstrap {
@@ -36,6 +42,7 @@
     background-repeat: no-repeat;
     background-position: center;
     padding: 20px;
+    background-color: rgb(87, 61, 124);
 }
 
 .Gith {
@@ -44,6 +51,7 @@
     background-repeat: no-repeat;
     background-position: center;
     padding: 20px;
+    background-color: white;
 }
 
 .HTML {
@@ -52,6 +60,7 @@
     background-repeat: no-repeat;
     background-position: center;
     padding: 20px;
+    background-color: rgb(222, 133, 79);
 }
 
 .Javascript {
@@ -60,6 +69,7 @@
     background-repeat: no-repeat;
     background-position: center;
     padding: 20px;
+    background-color: rgb(231, 213, 76);
 }
 
 .React {
@@ -68,6 +78,7 @@
     background-repeat: no-repeat;
     background-position: center;
     padding: 20px;
+    background-color: rgb(34, 34, 34);
 }
 
 .Material {
@@ -76,6 +87,7 @@
     background-repeat: no-repeat;
     background-position: center;
     padding: 20px;
+    background-color: white;
 }
 
 .Sass {
@@ -84,6 +96,7 @@
     background-repeat: no-repeat;
     background-position: center;
     padding: 20px;
+    background-color: white;
 }
 
 .Tailwind {
@@ -92,4 +105,5 @@
     background-repeat: no-repeat;
     background-position: center;
     padding: 20px;
+    background-color: white;
 }

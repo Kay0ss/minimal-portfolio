@@ -61,7 +61,7 @@ class Intro extends React.Component {
           />
           <p className="intro-text">
             I'm <span className="jack">jack</span>, I'm a full stack web
-            developer from Minneapolis. I'm interested in Web Development, Design, Startups, and Creative Projects.
+            developer with a focus on front end development from Minneapolis. I'm interested in Web Development, Design, Startups, and Creative Projects.
           </p>
           <a
             class="button-toggle"

@@ -16,14 +16,14 @@ Body .wrapper {
 }
 
 body.dark-mode{
-  background-color: rgb(38, 38, 53);
+  background-color: rgb(10, 12, 16);
   color:rgb(141, 148, 162);
 }
 
 body.dark-mode .wrapper .box{
   /* background-color: rgb(27, 41, 56); */
   background-color: transparent;
-  border: 2px solid rgb(111, 111, 111);
+  border: 2px solid rgb(92, 92, 92);
   color: rgb(141, 148, 162);
 }
 

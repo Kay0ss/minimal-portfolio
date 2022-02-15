@@ -6,6 +6,7 @@ import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Projects from "./pages/Projects/Projects";
 import Tools from "./pages/Tools/tools";
+import Footer from "./footer";
 
 
 // import { UserContext, UserProvider } from "./utils/UserContext";
@@ -24,6 +25,7 @@ export default function App() {
               <Route path="/projects" element={<Projects />} />
               <Route path="/tools" element={<Tools />} />
             </Routes>
+            <Footer />
           </Router>
         </div>
     //   </UserProvider>

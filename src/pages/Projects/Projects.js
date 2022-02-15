@@ -8,7 +8,7 @@ function Projects() {
     <>
       <div className="proj-page-container">
         <a
-          href="jackt.xyz"
+          href="https:www.jackt.xyz"
           target="_blank"
           rel="noreferrer"
           className="proj box port"
