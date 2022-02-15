@@ -59,6 +59,36 @@
   height: 100%;
 }
 
+.port {
+  background-color: white;
+  background-image: url("../../images/react-portfolio.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-position-y: -10px;
+  height: 100%;
+}
+
+.not {
+  background-color: white;
+  background-image: url("../../images/note-taker.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-position-y: -10px;
+  height: 100%;
+}
+
+.cq {
+  background-color: white;
+  background-image: url("../../images/code-quiz.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-position-y: -10px;
+  height: 100%;
+}
+
 .arrow-btn-long-proj {
   display: flex;
   align-items: center;
