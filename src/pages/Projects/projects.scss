@@ -1,6 +1,4 @@
-// body.dark-mode .proj {
-//   back
-// }
+
 
 .proj-page-container {
   margin: auto;
@@ -10,6 +8,7 @@
   grid-auto-rows: 288px;
   gap: 1em 1em;
   padding: 5px 10px 10px 10px;
+  // justify-content: space-between;
 }
 
 .proj-page-container img {
@@ -29,6 +28,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-position-y: -20px;
 }
 
 .tc {
@@ -37,7 +37,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 288px;
+  background-position-y: -20px;
 }
 
 .swq {
@@ -46,16 +46,96 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-position-y: -20px;
+}
+
+.nft {
+  background-color: white;
+  background-image: url("../../images/nft-card.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-position-y: -10px;
+  height: 100%;
+}
+
+.arrow-btn-long-proj {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  border: 2px solid #e6e6e6;
+  color: black;
+  gap: 6px;
+  padding: 5px;
+  text-decoration: none;
+  position: absolute;
+  height: 36px;
+  padding: 0 12px;
+  bottom: 20px;
+  left: 20px;
+  border-radius: 100px;
+  transition: all 0.4s ease;
+  z-index: 999;
+}
+
+.arrow-btn-long-proj:hover {
+  box-shadow: #e1e1e1bb 0 0 0 5px;
+}
+
+.arrow-btn-long-proj svg {
+  /* position: absolute; */
+  opacity: 0.75;
+  width: 12px !important;
+  color: #0d1117;
+  stroke-width: 1px !important;
+}
+
+.arrow-btn-git {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  border: 2px solid #e6e6e6;
+  color: black;
+  gap: 6px;
+  text-decoration: none;
+  position: absolute;
+  height: 36px;
+  width: 36px;
+  padding: 0 8px;
+  bottom: 20px;
+  left: 53%;
+  border-radius: 100px;
+  transition: all 0.4s ease;
+}
+
+.arrow-btn-git:hover {
+  box-shadow: #e1e1e1bb 0 0 0 5px;
+}
+
+.arrow-btn-git svg {
+  opacity: 0.75;
+  width: 25px !important;
+  color: #0d1117;
 }
 
 .proj-logo {
   height: 100%;
 }
 
-// .proj iframe {
-//     height: 100%;
-//     width: 300px;
-// }
+.proj:hover .description {
+  opacity: 1 !important;
+}
+
+.proj .description {
+  text-align: center;
+  transition: all 0.3s ease;
+  background-color: white;
+  height: 288px;
+  padding: 20px;
+  color: black;
+}
 
 .proj-page-container article:nth-child(1) {
   grid-column: 1;
