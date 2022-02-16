@@ -94,6 +94,7 @@ const Map = () => {
       <div className="map-container" id="light" ref={mapContainerRef} />
       <button
         id="out"
+        name="out"
         className="Map__ZoomButton-sc-12s41qg-4 eTWOUV light-button"
         style={{ left: "20px", opacity: "1", transform: "none" }}
         >
@@ -125,6 +126,7 @@ const Map = () => {
       <button
         id="in"
         className="Map__ZoomButton-sc-12s41qg-4 eTWOUV light-button"
+        name="in"
         style={{ right: "20px", opacity: "1", transform: "none" }}
         >
         <svg

@@ -12,14 +12,10 @@ import Project3 from "../../Cards/project3.js";
 import Contact from "../../Cards/contact.js";
 import Map from "../../Cards/map.js";
 
-// import Nav from "./test-nav.js";
-
 function Home() {
   return (
     <>
-      {/* <Nav /> */}
       <div className="wrapper">
-        {/* <DragDropContext> */}
         <Intro />
         <Map />
         <Project1 />
@@ -30,7 +26,6 @@ function Home() {
         <About />
         <Project3 />
         <Contact />
-        {/* </DragDropContext> */}
       </div>
     </>
   );

@@ -17,15 +17,6 @@ function Project2() {
           <BsArrowUpRight />
           <p className="btn-text">Tools</p>
         </Link>
-            {/* <FaBootstrap /> */}
-            {/* <FaCss3Alt />
-            <FaHtml5 />
-            <FaJsSquare />
-            <FaFigma />
-            <FaGit />
-            <FaNodeJs />
-            <FaReact />
-            <FaSass /> */}
         </div>
       </div>
     </div>

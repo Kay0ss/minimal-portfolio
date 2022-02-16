@@ -10,7 +10,6 @@ import React from "../../images/react.png";
 
 function About() {
   return (
-    // <div className="wrapper">
     <>
       <div className="box container">
         <img className="me" src={me} alt="me" />
@@ -64,14 +63,7 @@ function About() {
           <br />
         </div>
       </div>
-      {/* <div className="skills">
-        <h1 className="skills-title">Socials</h1>
-        &nbsp;
-        <div className="skills-content">
-          <img src={github} alt="github" className="skills-logo" />
-          <img src={linkedin} alt="linkedin" className="skills-logo" />
-        </div>
-      </div> */}
+
     </>
   );
 }

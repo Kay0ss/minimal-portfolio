@@ -41,12 +41,7 @@ class Intro extends React.Component {
   componentDidMount() {}
 
   render() {
-    //   function ZoomIn() {
-    //     console.log('it worked');
-    //     img.classList.add('fade-in');
-    //   }
     return (
-      // <Draggable draggableId="intro">
       <div className="box intro">
         <div className="intro-content">
           <img
@@ -138,11 +133,9 @@ class Intro extends React.Component {
           </button>
         </div>
       </div>
-      // </Draggable>
     );
   }
 }
 
 export default Intro;
-// const rootElement = document.getElementById("root");
-// ReactDOM.render(<Intro />, rootElement);
+
