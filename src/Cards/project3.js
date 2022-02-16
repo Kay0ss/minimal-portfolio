@@ -10,7 +10,7 @@ function Project3() {
         <img className="proj-bg" src={proj3} alt="..." height={"100%"} />        
         <a
           className="arrow-btn-long"
-          href="https:www.jackt.xyz"
+          href="https://jackt.xyz"
           target="_blank"
           rel="noreferrer"
         >
