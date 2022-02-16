@@ -5,7 +5,8 @@ import "./projects.scss";
 function Projects() {
   return (
     <>
-      <div className="proj-page-container">
+      {/* <div className="proj-page-container"> */}
+      <div className="wrapper proj-cont">
         <a
           href="https:www.jackt.xyz"
           target="_blank"

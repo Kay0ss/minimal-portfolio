@@ -5,7 +5,9 @@ import "./tools.scss";
 function Tools() {
   return (
     <>
-      <h1
+      {/* &nbsp; */}
+      <div className="wrapper proj-cont">
+      {/* <h1
         className="tools"
         style={{
           fontSize: "30px",
@@ -15,9 +17,7 @@ function Tools() {
         }}
       >
         &nbsp;&nbsp;Tools I use
-      </h1>
-      &nbsp;
-      <div className="proj-page-container">
+      </h1> */}
         <a
           href="https://www.adobe.com/products/photoshop/free-trial-download.html?sdid=1NZGDDHD&mv=search&ef_id=Cj0KCQiAu62QBhC7ARIsALXijXSbNvX2RMzua1YdYcBYSmvidBqYR4o3daExPLyIbDndoMb08iTpGd4aAsXHEALw_wcB:G:s&s_kwcid=AL!3085!3!452570596987!e!!g!!photoshop!10687808131!102260248461&gclid=Cj0KCQiAu62QBhC7ARIsALXijXSbNvX2RMzua1YdYcBYSmvidBqYR4o3daExPLyIbDndoMb08iTpGd4aAsXHEALw_wcB"
           target="_blank"
@@ -189,6 +189,9 @@ function Tools() {
           </article>
         </a>
       </div>
+
+
+
       <h1
         className="tools"
         style={{
@@ -202,7 +205,7 @@ function Tools() {
         &nbsp;&nbsp;Tools I'm Learning
       </h1>
       &nbsp;
-      <div className="proj-page-container">
+      <div className="wrapper proj-cont">
         <a
           href="https://reactjs.org/"
           target="_blank"
