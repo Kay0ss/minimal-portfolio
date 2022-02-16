@@ -219,7 +219,7 @@ function Projects() {
             </p>
             <a
               className="arrow-btn-git"
-              href="https://github.com/Kay0ss/nft-preview-card"
+              href="https://github.com/Kay0ss/note-taker"
               target="_blank"
               rel="noreferrer"
               style={{ left: "58.1%" }}
