@@ -12,6 +12,7 @@ function Project3() {
           className="arrow-btn-long"
           href="https:www.jackt.xyz"
           target="_blank"
+          rel="noreferrer"
         >
           <BsArrowUpRight />
           <p className="btn-text">Old Site</p>
