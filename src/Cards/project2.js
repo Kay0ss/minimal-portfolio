@@ -1,23 +1,31 @@
 import React from "react";
 import "./cards.css";
-import proj2 from "../images/project2-bg.png";
-import { FaHtml5, FaSass, FaBootstrap, FaGit, FaJsSquare, FaReact, FaCss3Alt, FaFigma, FaNodeJs } from "react-icons/fa";
+import Toolsbg from "../images/Tools-bg.png";
+import Toolscontent from "../images/Tools-content.png";
+import { BsArrowUpRight } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 function Project2() {
   return (
     <div className="box">
-      <div style={{height : '100%'}}>
-        <img className="proj-bg-tall" src={proj2} alt="..." />
-        <div className="skills-box">
+      <div style={{height : '100%'}} className="home-tools">
+        <img className="proj-bg-tall" src={Toolsbg} alt="..." />
+        <img className="proj-tall" src={Toolscontent} alt="..." />
+
+        <div>
+        <Link className="arrow-btn-long" to="/Tools">
+          <BsArrowUpRight />
+          <p className="btn-text">Tools</p>
+        </Link>
             {/* <FaBootstrap /> */}
-            <FaCss3Alt />
+            {/* <FaCss3Alt />
             <FaHtml5 />
             <FaJsSquare />
             <FaFigma />
             <FaGit />
             <FaNodeJs />
             <FaReact />
-            <FaSass />
+            <FaSass /> */}
         </div>
       </div>
     </div>

@@ -1,16 +1,12 @@
-import react from "react";
 import "./about.css";
 import me from "../../images/meLaptop.png";
 import ValLogo from "../../images/Valorem-Logo.png";
 import Photoshop from "../../images/photoshop.png";
-import Illustrator from "../../images/illustrator.png";
 import Html from "../../images/Html.png";
 import Css from "../../images/css.png";
 import Bootstrap from "../../images/bootstrap.png";
 import javascript from "../../images/javascript.png";
 import React from "../../images/react.png";
-import github from "../../images/icon-maker.png";
-import linkedin from "../../images/linkedin.png";
 
 function About() {
   return (

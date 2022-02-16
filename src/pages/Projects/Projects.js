@@ -1,4 +1,3 @@
-import react from "react";
 import { BsArrowUpRight } from "react-icons/bs";
 import { RiGithubLine } from "react-icons/ri";
 import "./projects.scss";
@@ -84,7 +83,6 @@ function Projects() {
           href="https://captionmeme.herokuapp.com/"
           target="_blank"
           rel="noreferrer"
-          rel="noopener noreferrer"
           className="proj box cm"
         >
           <article>

@@ -18,6 +18,47 @@ body.dark-mode .skills-box svg {
   color: rgb(141, 148, 162);
 }
 
+body.dark-mode .arrow-btn-long,
+body.dark-mode .arrow-btn-long-proj,
+body.dark-mode .arrow-btn-git,
+body.dark-mode .arrow-btn,
+body.dark-mode .button-toggle {
+  background-color: rgb(0, 0, 0) !important;
+  border: 1px solid rgb(141, 148, 162) !important;
+  color: white !important;
+}
+
+body.dark-mode .arrow-btn-long:hover,
+body.dark-mode .arrow-btn-long-proj:hover,
+body.dark-mode .arrow-btn-git:hover,
+body.dark-mode .arrow-btn:hover,
+body.dark-mode .button-toggle:hover,
+body.dark-mode .btn-text:hover {
+  color: rgb(196, 196, 196) !important;
+}
+
+body.dark-mode .arrow-btn-long svg, body.dark-mode .arrow-btn svg, body.dark-mode .button-toggle p, body.dark-mode .arrow-btn-long-proj svg, body.dark-mode .arrow-btn-git svg {
+  color: white;
+}
+
+body.dark-mode .button-toggle{
+  .Path_5 {
+    stroke: white;
+  }
+  .Path_6 {
+    stroke: white;
+  }
+  .Path_7 {
+    stroke: white;
+  }
+  .Path_8 {
+    stroke: white;
+  }
+
+
+}
+
+
 #dark {
   position: absolute;
   top: 0;
@@ -529,4 +570,17 @@ body.dark-mode .arrow-btn-contact, body.dark-mode .arrow-btn-contact svg {
 
 .contact-content {
   font-size: 16px;
+}
+
+body .dark-mode .tools-bg {
+  display: none;
+}
+
+.tools-bg {
+
+}
+
+.home-tools {
+  /* background-image: url("../images/Tools-content.png"); */
+  /* background-size: cover; */
 }

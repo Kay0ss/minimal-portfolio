@@ -1,11 +1,9 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect } from "react";
 import mapboxgl from "mapbox-gl";
-import MapboxWorker from 'worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker';
 import "./cards.css";
 import useDarkMode from "use-dark-mode";
 import avatar from "../images/no-lockdown.png";
-import DarkMode from "./darkmode";
-import DarkMap from "./darkmap";
+
 
 
 // Light map ========================================================================================
@@ -18,7 +16,7 @@ mapboxgl.accessToken =
 
 const Map = () => {
   const mapContainerRef = useRef(null);
-  const darkMode = useDarkMode(false);
+
   
   // let style = '';
   // const dark = "mapbox://styles/jackt123/ckzan2oc0000g14kdl8mqftkh";
@@ -44,7 +42,6 @@ const Map = () => {
     });
     
 
-    console.log(map)
     // Add zoom and rotation controls to the map.
       map.scrollZoom.disable();
       
@@ -119,9 +116,9 @@ const Map = () => {
             d="M16,12H8"
             fill="none"
             stroke="#0D1117"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="1.5"
             ></path>
         </svg>
       </button>
@@ -149,9 +146,9 @@ const Map = () => {
             d="M12,8v8"
             fill="none"
             stroke="#0D1117"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="1.5"
             ></path>
           <path
             id="Path_15"
@@ -159,9 +156,9 @@ const Map = () => {
             d="M16,12H8"
             fill="none"
             stroke="#0D1117"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="1.5"
             ></path>
         </svg>
       </button>

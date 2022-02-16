@@ -13,16 +13,16 @@ function nav() {
         jack
       </Link>
       <div className="navbar">
-        <NavLink to="/" activeClassName="active1" id="nav-btn1">
+        <NavLink to="/" activeclassname="active1" id="nav-btn1">
           Home
         </NavLink>
-        <NavLink to="/About" activeClassName="active2" id="nav-btn2">
+        <NavLink to="/About" activeclassname="active2" id="nav-btn2">
           About
         </NavLink>
-        <NavLink to="/Projects" activeClassName="active3" id="nav-btn3">
+        <NavLink to="/Projects" activeclassname="active3" id="nav-btn3">
           Projects
         </NavLink>
-        <NavLink to="/Tools" activeClassName="active4" id="nav-btn4">
+        <NavLink to="/Tools" activeclassname="active4" id="nav-btn4">
           Tools
         </NavLink>
         <div className="animation"></div>
