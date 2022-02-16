@@ -202,7 +202,7 @@ function Tools() {
           marginTop: "50px",
         }}
       >
-        &nbsp;&nbsp;Tools I'm Learning
+        &nbsp;&nbsp;What I'm learning
       </h1>
       &nbsp;
       <div className="wrapper proj-cont">
