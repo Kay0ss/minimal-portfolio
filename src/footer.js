@@ -5,7 +5,7 @@ function footer() {
         <div className="footer">
             <div className="footer-content">
                 <div className="footer-content-left" style={{textAlign: "center", marginBottom: "10px", marginTop: "10px"}}>
-                    <h3>@2022 John Theisen</h3>
+                    <h6>@2022 John Theisen</h6>
                 </div>
             </div>
         </div>

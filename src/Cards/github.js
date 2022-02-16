@@ -9,7 +9,7 @@ function Github() {
         <div className="box">
             <div className="github">
                 <FaGithub />
-                <a className="arrow-btn" href="https://github.com/Kay0ss" target="_blank"><BsArrowUpRight /></a>
+                <a className="arrow-btn" href="https://github.com/Kay0ss" name="go-to" target="_blank"><BsArrowUpRight /></a>
             </div>
         </div>
     )

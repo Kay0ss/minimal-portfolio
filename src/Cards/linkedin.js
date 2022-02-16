@@ -8,7 +8,7 @@ function Linkedin() {
     <div className="box linkedin">
       <div className="box-linkedin">
         <FaLinkedinIn />
-        <a className="arrow-btn" href="https://www.linkedin.com/in/jacktheisen/" target="_blank"><BsArrowUpRight /></a>
+        <a className="arrow-btn" href="https://www.linkedin.com/in/jacktheisen/" name="go-to" target="_blank"><BsArrowUpRight /></a>
       </div>
     </div>
   );
