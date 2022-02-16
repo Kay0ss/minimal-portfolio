@@ -8,7 +8,7 @@ function Projects() {
       {/* <div className="proj-page-container"> */}
       <div className="wrapper proj-cont">
         <a
-          href="https:www.jackt.xyz"
+          href="https://jackt.xyz"
           target="_blank"
           rel="noreferrer"
           className="proj box port"
@@ -19,7 +19,7 @@ function Projects() {
 
             <a
               className="arrow-btn-long-proj"
-              href="https:www.jackt.xyz"
+              href="https://jackt.xyz/"
               target="_blank"
               rel="noreferrer"
             >
