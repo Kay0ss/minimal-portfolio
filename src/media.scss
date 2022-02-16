@@ -4,17 +4,436 @@
 
 /* Large desktop */
 @media (min-width: 1200px) {
-  body {
-    
-  }
+
 }
 
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
+  .nav-container {
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 40px !important;
+    margin-top: 20px !important;
+    height: 80px !important;
+  }
+
+  #nav-contact {
+    display: none;
+  }
+
+  .intro-content img {
+    width: 22vw !important;
+    height: auto;
+  }
+
+  .wrapper{
+    margin: auto !important;
+    display: grid !important;
+    grid-auto-columns: repeat(10px) !important;
+    grid-auto-rows: 40.6vw !important;
+    grid-template-columns: auto auto !important;
+    grid-template-rows: 1fr !important;
+    gap: 1em 1em !important;
+    padding: 5px 20px 80px 20px !important;
+    // min-height: 100px;
+  }
+
+  // INTRO
+  .wrapper div:nth-child(1) {
+    grid-column: 1 / 2 !important;
+    grid-row: 2 / 4 !important;
+  }
+  // MAP
+  .wrapper div:nth-child(2) {
+    grid-column: 2 !important;
+    grid-row: 2 !important;
+  }
+  // PROJECT 1
+  .wrapper div:nth-child(3) {
+    grid-column: 2 !important;
+    grid-row: 3 / 5 !important;
+    // background-color: white;
+  }
+
+  .proj-tall {
+    top: -20px !important;
+  }
+  //DARK MODE
+  .wrapper div:nth-child(4) {
+    grid-column: 1 !important;
+    grid-row: 4 !important;
+    // background-color: white;
+  }
+  // LINKEDIN
+  .wrapper div:nth-child(5) {
+    grid-column: 1 !important;
+    grid-row: 5 !important;
+    // background-color: white;
+  }
+
+  // PROJECT 2
+  .wrapper div:nth-child(6) {
+    display: none;
+    // background-color: white;
+  }
+  // GITHUB
+  .wrapper div:nth-child(7) {
+    grid-column: 2 !important;
+    grid-row: 5 !important;
+    // background-color: white;
+  }
+  // ABOUT
+  .wrapper div:nth-child(8) {
+    grid-column: 1 / 3 !important;
+    grid-row: 6 / 8 !important;
+    // background-color: white;
+  }
+  // PROJECT 3
+  .wrapper div:nth-child(9) {
+    grid-column: 1 / 3 !important;
+    grid-row: 9 !important;
+    background-color: white;
+  }
+
+  .proj-bg {
+    margin-left: 40px;
+  }
+  // CONTACT
+  .wrapper div:nth-child(10) {
+    grid-column: 1 / 3 !important;
+    grid-row: 8  !important;
+    background-color: white;
+  }
+
+  // .contact-content, .contact-header {
+  //   display: none;
+  // }
+
+  .arrow-btn-contact {
+    height: 50px !important;
+    width: 120px !important;
+    text-align: center;
+    // white-space: nowrap;
+  }
+
+  // ABOUT SECTION ============================================================
+  .container-border {
+    width: 89%;
+  }
+
+  .container, .experiences, .skills{
+    width: 89%;
+  }
+
+  .container {
+    margin-top: 60px !important;
+  }
+  
+
+  // SKILLS SECTION ============================================================
+  .skills-content {
+    justify-content: center;
+    gap: 15px !important;
+  }
+
+  .proj {
+    pointer-events: none;
+  }
+
+  .arrow-btn-long-proj {
+    pointer-events: all;
+    padding: 20px !important;
+  }
+
+  .arrow-btn-git {
+    // padding: 20px !important;
+    height: 44px !important;
+    width: 44px !important;
+    pointer-events: all !important;
+  }
+
+
+.proj-cont {
+  // margin: auto !important;
+  margin-top: 55px !important;
+  pointer-events: none;
+  grid-auto-rows: 43.6vh !important;
+
+}
+
+article .description {
+  height: 43.6vh !important;
+}
+
+.arrow-btn-git {
+  left: 83% !important;
+}
+
+  .wrapper .proj:nth-child(1) {
+    // display: none;
+    grid-column: 1 !important;
+    grid-row: 2 !important;
+    // height: 40.6vh !important;
+    height: 100% !important;
+  }
+
+  .wrapper .proj:nth-child(2) {
+    // display: none;
+    grid-column: 2 !important;
+    grid-row: 2 !important;
+    // min-height: 200px;
+  }
+
+  .wrapper .proj:nth-child(3) {
+    // display: none;
+    grid-column: 1 !important;
+    grid-row: 3 !important;
+  }
+
+  .wrapper .proj:nth-child(4) {
+    // display: none;
+    grid-column: 2 !important;
+    grid-row: 3 !important;
+  }
+
+  .wrapper a:nth-child(5) {
+    // display: none;
+    grid-column: 1 !important;
+    grid-row: 4 !important;
+  }
+
+  .wrapper a:nth-child(6) {
+    // display: none;
+    grid-column: 2!important;
+    grid-row: 4 !important;
+  }
+
+  .wrapper a:nth-child(7) {
+    // display: none;
+    grid-column: 1 !important;
+    grid-row: 5 !important;
+  }
+
+  .wrapper a:nth-child(8) {
+    // display: none;
+    grid-column: 2!important;
+    grid-row: 5 !important;
+  }
 }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
+  .nav-container {
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 40px !important;
+    margin-top: 20px !important;
+    height: 80px !important;
+  }
+
+  #nav-contact {
+    display: none;
+  }
+
+  .intro-content img {
+    width: 22vw !important;
+    height: auto;
+  }
+
+  .wrapper{
+    margin: auto !important;
+    display: grid !important;
+    grid-auto-columns: repeat(10px) !important;
+    grid-auto-rows: 40.6vw !important;
+    grid-template-columns: auto auto !important;
+    grid-template-rows: 1fr !important;
+    gap: 1em 1em !important;
+    padding: 5px 20px 80px 20px !important;
+    // min-height: 100px;
+  }
+
+  // INTRO
+  .wrapper div:nth-child(1) {
+    grid-column: 1 / 2 !important;
+    grid-row: 2 / 4 !important;
+  }
+  // MAP
+  .wrapper div:nth-child(2) {
+    grid-column: 2 !important;
+    grid-row: 2 !important;
+  }
+  // PROJECT 1
+  .wrapper div:nth-child(3) {
+    grid-column: 2 !important;
+    grid-row: 3 / 5 !important;
+    // background-color: white;
+  }
+
+  .proj-tall {
+    top: -20px !important;
+  }
+  //DARK MODE
+  .wrapper div:nth-child(4) {
+    grid-column: 1 !important;
+    grid-row: 4 !important;
+    // background-color: white;
+  }
+  // LINKEDIN
+  .wrapper div:nth-child(5) {
+    grid-column: 1 !important;
+    grid-row: 5 !important;
+    // background-color: white;
+  }
+
+  // PROJECT 2
+  .wrapper div:nth-child(6) {
+    display: none;
+    // background-color: white;
+  }
+  // GITHUB
+  .wrapper div:nth-child(7) {
+    grid-column: 2 !important;
+    grid-row: 5 !important;
+    // background-color: white;
+  }
+  // ABOUT
+  .wrapper div:nth-child(8) {
+    grid-column: 1 / 3 !important;
+    grid-row: 6 / 8 !important;
+    // background-color: white;
+  }
+  // PROJECT 3
+  .wrapper div:nth-child(9) {
+    grid-column: 1 / 3 !important;
+    grid-row: 9 !important;
+    background-color: white;
+  }
+
+  .proj-bg {
+    margin-left: 40px;
+  }
+  // CONTACT
+  .wrapper div:nth-child(10) {
+    grid-column: 1 / 3 !important;
+    grid-row: 8  !important;
+    background-color: white;
+  }
+
+  // .contact-content, .contact-header {
+  //   display: none;
+  // }
+
+  .arrow-btn-contact {
+    height: 50px !important;
+    width: 120px !important;
+    text-align: center;
+    // white-space: nowrap;
+  }
+
+  // ABOUT SECTION ============================================================
+  .container-border {
+    width: 89%;
+  }
+
+  .container, .experiences, .skills{
+    width: 89%;
+  }
+
+  .container {
+    margin-top: 60px !important;
+  }
+  
+
+  // SKILLS SECTION ============================================================
+  .skills-content {
+    justify-content: center;
+    gap: 15px !important;
+  }
+
+  .proj {
+    pointer-events: none;
+  }
+
+  .arrow-btn-long-proj {
+    pointer-events: all;
+    padding: 20px !important;
+  }
+
+  .arrow-btn-git {
+    // padding: 20px !important;
+    height: 44px !important;
+    width: 44px !important;
+    pointer-events: all !important;
+  }
+
+
+.proj-cont {
+  // margin: auto !important;
+  margin-top: 55px !important;
+  pointer-events: none;
+  grid-auto-rows: 43.6vh !important;
+
+}
+
+article .description {
+  height: 43.6vh !important;
+}
+
+.arrow-btn-git {
+  left: 83% !important;
+}
+
+  .wrapper .proj:nth-child(1) {
+    // display: none;
+    grid-column: 1 !important;
+    grid-row: 2 !important;
+    // height: 40.6vh !important;
+    height: 100% !important;
+  }
+
+  .wrapper .proj:nth-child(2) {
+    // display: none;
+    grid-column: 2 !important;
+    grid-row: 2 !important;
+    // min-height: 200px;
+  }
+
+  .wrapper .proj:nth-child(3) {
+    // display: none;
+    grid-column: 1 !important;
+    grid-row: 3 !important;
+  }
+
+  .wrapper .proj:nth-child(4) {
+    // display: none;
+    grid-column: 2 !important;
+    grid-row: 3 !important;
+  }
+
+  .wrapper a:nth-child(5) {
+    // display: none;
+    grid-column: 1 !important;
+    grid-row: 4 !important;
+  }
+
+  .wrapper a:nth-child(6) {
+    // display: none;
+    grid-column: 2!important;
+    grid-row: 4 !important;
+  }
+
+  .wrapper a:nth-child(7) {
+    // display: none;
+    grid-column: 1 !important;
+    grid-row: 5 !important;
+  }
+
+  .wrapper a:nth-child(8) {
+    // display: none;
+    grid-column: 2!important;
+    grid-row: 5 !important;
+  }
+
 }
 
 /* Landscape phones and down */
