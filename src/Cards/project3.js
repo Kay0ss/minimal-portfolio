@@ -10,7 +10,7 @@ function Project3() {
         <img className="proj-bg" src={proj3} alt="..." height={"100%"} />        
         <a
           className="arrow-btn-long"
-          href="https://jackt.xyz"
+          href="https://kay0ss.github.io/react-portfolio/"
           target="_blank"
           rel="noreferrer"
         >
